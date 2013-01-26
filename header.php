@@ -9,7 +9,6 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
 	<!-- 弹出菜单的样式文件 -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/j-menu.js"></script>
-
 	
 	<?php wp_head() // For plugins ?>
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -23,7 +22,7 @@
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
-		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo _wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
+		<h1 id="blog-title"><span><?php bloginfo('name'); ?></span></h1>
 		<div id="blog-description">
 			<?php bloginfo('description') ?>
 		</div>
@@ -43,7 +42,11 @@
 			</ul>
 		</div><!--	#nav-menu -->
 		<div style="clear:both;"></div>
-		
 		<div id="language-setting">
+			<select id="language">
+				<option value="English">English</option>
+				<option value="Chinese">Chinese</option>
+				<option value="default" selected="selected">Choose your language</option>
+			</select>
 		</div><!--	#language-setting -->
 	</div><!--  #header -->
