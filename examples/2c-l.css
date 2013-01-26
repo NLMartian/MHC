@@ -2,27 +2,52 @@
 LAYOUT: Two-Column (Left)
 DESCRIPTION: Two-column fluid layout with one sidebars left of content
 */
-div#container {
-float:right;
-margin:0 0 0 -200px;
-width:100%;
+body
+{
+	display: block;
+	margin: 0;
 }
 
-div#content {
-margin:0 0 0 200px;
+div#wrapper
+{
+	width: auto;
 }
 
-div.sidebar {
-float:left;
-overflow:hidden;
-width:180px;
+div#header
+{
+	width: 100%;
+	border: 2px solid #ffff00;
 }
 
-div#secondary {
-clear:left;
+div#container 
+{	
+	float: right;
+	width:	100%;
+	margin: 0 0 0 -30%;
 }
 
-div#footer {
-clear:both;
-width:100%;
+div#content 
+{
+	margin: 0 0 0 30%;
+	border: 2px solid #00ff00;
+}
+
+div.sidebar 
+{
+	float: left;
+	overflow:	hidden;
+	width:	28%;
+	border: 2px solid #0000ff;
+}
+
+div#secondary 
+{
+	clear:left;
+}
+
+div#footer 
+{
+	clear:both;
+	width:100%;
+	border: 2px solid #00ffff;
 }

@@ -1,20 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes() ?>>
 <head profile="http://gmpg.org/xfn/11">
-	<title><?php wp_title( '-', true, 'right' ); echo _wp_specialchars( get_bloginfo('name'), 1 ) ?></title>
+	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
-
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), _wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), _wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
-	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 	
-	<!-- 导入Jquery -->
+	<!-- 导入jquery.js -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
-	<!-- 加载菜单效果的 JavaScriot -->
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/j-menu.js"></script>
+	<!-- 弹出菜单的样式文件 -->
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/j-menu.js"></script>
+
 	
 	<?php wp_head() // For plugins ?>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 </head>
 
 <body class="<?php sandbox_body_class() ?>">
@@ -23,14 +24,9 @@
 
 	<div id="header">
 		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo _wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
-		<div id="blog-description"><?php bloginfo('description') ?></div>
-	</div><!--  #header -->
-
-	<div id="access">
-		<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div>
-		<!--?php sandbox_globalnav() ?-->
-		
-		<!-- 分类菜单 START -->
+		<div id="blog-description">
+			<?php bloginfo('description') ?>
+		</div>
 		<div class="menubar">
 			<ul class="menus" id="menus">
 				<?php
@@ -45,8 +41,9 @@
 				</li>
 				<?php wp_list_categories('depth=2&title_li=0&orderby=name&show_count=0'); ?>
 			</ul>
-		</div>
-		<!-- 分类菜单 END -->
+		</div><!--	#nav-menu -->
 		<div style="clear:both;"></div>
 		
-	</div><!-- #access -->
+		<div id="language-setting">
+		</div><!--	#language-setting -->
+	</div><!--  #header -->
