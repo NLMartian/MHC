@@ -16,24 +16,17 @@
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
-<<<<<<< HEAD
-		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo _wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
-=======
 		<h1 id="blog-title"><span><?php bloginfo('name'); ?></span></h1>
->>>>>>> 小小的修改了一下。。。。
 		<div id="blog-description">
 			<?php bloginfo('description') ?>
 		</div>
 		<div id="nav-menu">
 		</div><!--	#nav-menu -->
 		<div id="language-setting">
-<<<<<<< HEAD
-=======
 			<select id="language">
 				<option value="English">English</option>
 				<option value="Chinese">Chinese</option>
 				<option value="default" selected="selected">Choose your language</option>
 			</select>
->>>>>>> 小小的修改了一下。。。。
 		</div><!--	#language-setting -->
 	</div><!--  #header -->

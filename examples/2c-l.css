@@ -15,12 +15,9 @@ div#wrapper
 
 div#header
 {
-<<<<<<< HEAD
 	width: 100%;
 	border: 2px solid #ffff00;
-=======
 	text-align: left;
->>>>>>> 小小的修改了一下。。。。
 }
 
 div#container 
@@ -32,11 +29,7 @@ div#container
 
 div#content 
 {
-<<<<<<< HEAD
-	margin: 0 0 0 30%;
-=======
 	margin: 0 0 0 29%;
->>>>>>> 小小的修改了一下。。。。
 	border: 2px solid #00ff00;
 }
 
