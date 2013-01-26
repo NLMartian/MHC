@@ -214,3 +214,47 @@ div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
 margin:0;
 padding:0;
 }
+
+/* 导航菜单 START */
+.menubar ul.menus li {
+	float:left; /* 靠左浮动 */
+	list-style:none; /* 清空列表风格 */
+	margin-right:8px; /* 右侧的间隔 */
+}
+/* 菜单项链接 */
+.menubar ul.menus li a {
+	padding:10px 20px; /* 内边距 */
+	display:block; /* 显示为块 */
+	color:#FFF; /* 文字颜色 */
+	background:#FFE1E0; /* 背景颜色 */
+	text-decoration:none; /* 没有下横线 */
+}
+/* 当前菜单位置 */
+.menubar ul.menus ul {
+	position:absolute;
+}
+/* 当前菜单项链接 */
+.menubar ul.menus li.current-cat a {
+	background:#5495CD; /* 背景颜色 */
+}
+/* 选中菜单项链接 */
+.menubar ul.menus li a:hover {
+	background:#4281B7; /* 背景颜色 */
+}
+/* 二级菜单 */
+.menubar ul.children {
+	display:none; /* 初始化页面时不显示出来 */
+	padding:0;
+	margin:0;
+}
+/* 二级菜单的菜单项 */
+.menubar ul.children li {
+	float:none; /* 垂直排列 */
+	margin:0;
+	padding:0;
+}
+/* 二级菜单的当前菜单项链接 */
+.menubar ul.children li a {
+	width:80px; /* 对 IE6 来说十分很重要 */
+}
+/* 导航菜单 END */
