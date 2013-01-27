@@ -254,26 +254,29 @@ div#title{
 	margin: 20px 10px 0 100px
 }
 
-
 /* 导航菜单 START */
 
 .menubar {
-	float:left;
-	margin:55px 0 10px 170px;
+	float:right;
+	margin:56px 60px 10px 0;
 }
 
 .menubar ul.menus li {
 	float:left; /* 靠左浮动 */
 	list-style:none; /* 清空列表风格 */
 	margin-right:8px; /* 右侧的间隔 */
+	height:60px;
+	width:100px;
+	overflow:visible;
 }
 /* 菜单项链接 */
 .menubar ul.menus li a {
-	padding:10px 20px; /* 内边距 */
+	padding:6px 10px 34px 10px; /* 内边距 */
 	display:block; /* 显示为块 */
 	color:#FFF; /* 文字颜色 */
 	background:transparent; /* 背景颜色 */
 	text-decoration:none; /* 没有下横线 */
+	text-align: center;
 }
 /* 当前菜单位置 */
 .menubar ul.menus ul {
@@ -281,11 +284,11 @@ div#title{
 }
 /* 当前菜单项链接 */
 .menubar ul.menus li.current-cat a {
-	background:#5495CD; /* 背景颜色 */
+	background:url(images/menu-hover-bg.png) no-repeat; /* 背景图片 */
 }
 /* 选中菜单项链接 */
 .menubar ul.menus li a:hover {
-	background:#4281B7; /* 背景颜色 */
+	background:url(images/menu-hover-bg.png) no-repeat; /* 背景图片 */
 }
 /* 二级菜单 */
 .menubar ul.children {
@@ -301,7 +304,14 @@ div#title{
 }
 /* 二级菜单的当前菜单项链接 */
 .menubar ul.children li a {
-	background:#688EFF;
+	background:#FFF;
 	width:80px; /* 对 IE6 来说十分很重要 */
+	color:#FF8270;
+}
+/* 二级菜单选中链接 */
+.menubar ul.children li a:hover {
+	background:#FF8270;
+	width:80px; /* 对 IE6 来说十分很重要 */
+	color:#FFF;
 }
 /* 导航菜单 END */
