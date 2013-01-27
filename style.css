@@ -22,10 +22,11 @@ div#header h1
 
 div#language-setting
 {
-	background: url(images/language_setting.jpg) no-repeat;
-	width: 1200px;
-	height: 115px;
-	margin: 20px 0 0 30px;
+	background: url(images/language-setting-bg.png) no-repeat;
+	width: 1100px;
+	height: 251px;
+	margin: 20px auto 0 auto;
+	float:none
 }
 
 div#language-setting select
