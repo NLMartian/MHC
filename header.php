@@ -22,26 +22,33 @@
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
-		<h1 id="blog-title"><span><?php bloginfo('name'); ?></span></h1>
-		<div id="blog-description">
-			<?php bloginfo('description') ?>
+	
+		<div id="title-nav">
+			<div id="title">
+				<h1 id="blog-title"><span><?php bloginfo('name'); ?></span></h1>
+				<div id="blog-description">
+					<?php bloginfo('description') ?>
+				</div>
+			</div>
+			
+			<div class="menubar">
+				<ul class="menus" id="menus">
+					<?php
+						if (is_home()) {
+							$home_menu_class = 'current-cat';
+						} else {
+							$home_menu_class = 'cat-item';
+						}
+					?>
+					<li class="<?php echo($home_menu_class); ?>">
+						<a title="<?php _e('Home', 'default'); ?>" href="<?php echo get_settings('home'); ?>/"><?php _e('Home', 'default'); ?></a>
+					</li>
+					<?php wp_list_categories('depth=2&title_li=0&orderby=ID&show_count=0'); ?>
+				</ul>
+			</div><!--	#nav-menu -->
 		</div>
-		<div class="menubar">
-			<ul class="menus" id="menus">
-				<?php
-					if (is_home()) {
-						$home_menu_class = 'current-cat';
-					} else {
-						$home_menu_class = 'cat-item';
-					}
-				?>
-				<li class="<?php echo($home_menu_class); ?>">
-					<a title="<?php _e('Home', 'default'); ?>" href="<?php echo get_settings('home'); ?>/"><?php _e('Home', 'default'); ?></a>
-				</li>
-				<?php wp_list_categories('depth=2&title_li=0&orderby=name&show_count=0'); ?>
-			</ul>
-		</div><!--	#nav-menu -->
 		<div style="clear:both;"></div>
+
 		<div id="language-setting">
 			<select id="language">
 				<option value="English">English</option>

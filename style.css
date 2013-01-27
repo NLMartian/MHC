@@ -239,7 +239,28 @@ margin:0;
 padding:0;
 }
 
+
+/* 标题和导航菜单区域 */
+div#title-nav{
+	background: url(images/nav-menu-bg.png) no-repeat;
+	width: 1143px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+div#title{
+	float:left;
+	margin: 20px 10px 0 100px
+}
+
+
 /* 导航菜单 START */
+
+.menubar {
+	float:left;
+	margin:55px 0 10px 170px;
+}
+
 .menubar ul.menus li {
 	float:left; /* 靠左浮动 */
 	list-style:none; /* 清空列表风格 */
@@ -250,7 +271,7 @@ padding:0;
 	padding:10px 20px; /* 内边距 */
 	display:block; /* 显示为块 */
 	color:#FFF; /* 文字颜色 */
-	background:#FFE1E0; /* 背景颜色 */
+	background:transparent; /* 背景颜色 */
 	text-decoration:none; /* 没有下横线 */
 }
 /* 当前菜单位置 */
@@ -279,6 +300,7 @@ padding:0;
 }
 /* 二级菜单的当前菜单项链接 */
 .menubar ul.children li a {
+	background:#688EFF;
 	width:80px; /* 对 IE6 来说十分很重要 */
 }
 /* 导航菜单 END */
