@@ -6,6 +6,9 @@ body
 {
 	display: block;
 	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	color: #000;
 }
 
 div#wrapper
@@ -16,7 +19,6 @@ div#wrapper
 div#header
 {
 	width: 100%;
-	border: 2px solid #ffff00;
 	text-align: left;
 }
 
@@ -30,7 +32,6 @@ div#container
 div#content 
 {
 	margin: 0 0 0 29%;
-	border: 2px solid #00ff00;
 }
 
 div.sidebar 
@@ -49,6 +50,4 @@ div#secondary
 div#footer 
 {
 	clear:both;
-	width:100%;
-	border: 2px solid #00ffff;
 }
