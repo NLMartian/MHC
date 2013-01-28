@@ -211,9 +211,12 @@ div.sidebar input#s {
 width:7em;
 }
 
-div.sidebar li {
-list-style:none;
-margin:0 0 2em;
+div.sidebar li 
+{
+	list-style:none;
+	margin:0 0 2em;
+}
+
 div#primary h3
 {
 	color: #B33C1C;
@@ -284,9 +287,10 @@ div.sidebar li
 
 }
 
-div.sidebar li form {
-margin:0.2em 0 0;
-padding:0;
+div.sidebar li form 
+{
+	margin:0.2em 0 0;
+	padding:0;
 }
 
 div.sidebar ul ul {
