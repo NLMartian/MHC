@@ -228,7 +228,11 @@ float:left;
 
 div#footer 
 {
-text-align:center;
+	margin:0 auto;
+	width:1143px;
+	height:95px;
+	background:url(images/footer-bg.png) repeat-x;
+	text-align:left;
 }
 
 input#author,input#email,input#url,div.navigation div {
