@@ -233,6 +233,26 @@ div#footer
 	height:95px;
 	background:url(images/footer-bg.png) repeat-x;
 	text-align:left;
+	
+}
+div#footer-info{
+	padding-left:30px;
+	height:95px;
+	/*IE8与标准游览器垂直对齐*/
+	display: table-cell;
+	vertical-align:middle;
+	font-family : arial;
+	font-size:16px;
+}
+
+#footer-info span{
+	color:#FFF;
+	margin-right:10px;
+}
+
+#footer-info span a{
+	color:#FFF;
+	text-decoration:none;
 }
 
 input#author,input#email,input#url,div.navigation div {
