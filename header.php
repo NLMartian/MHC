@@ -7,9 +7,13 @@
 	
 	<!-- 导入jquery.js -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+	<!-- 导入jquery.corner.js -->
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.corner.js"></script>
 	<!-- 弹出菜单的样式文件 -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/j-menu.js"></script>
-	
+	<!-- 导入mhc.js -->
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mhc.js"></script>
+
 	<?php wp_head() // For plugins ?>
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />

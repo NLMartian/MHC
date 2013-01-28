@@ -31,15 +31,16 @@ div#container
 
 div#content 
 {
-	margin: 0 0 0 29%;
+	margin: 0 0 0 32%;
+
 }
 
 div.sidebar 
 {
 	float: left;
 	overflow:	hidden;
-	width:	28%;
-	border: 2px solid #0000ff;
+	width:	290px;
+	margin-left: 74px;
 }
 
 div#secondary 
