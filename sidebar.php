@@ -19,17 +19,19 @@
 		<ul class="xoxo">
 			<li id="pages">
 				<h3 class="cornerTitle"><?php _e( 'Health information', 'sandbox' ) ?></h3>
-				<ul>
+				<ul class="cornerUl">
 					<?php wp_list_pages('title_li=&sort_column=menu_order' ) ?>
+					<a href="/" title="More" class="more">More>></a>
 				</ul>
 			</li>
 
 			<li id="categories">
 				<h3 class="cornerTitle"><?php _e( 'Insurance news', 'sandbox' ) ?></h3>
-				<ul>
-					<li><a href="" title="">Who choose MHC</a></li>
-					<li><a href="" title="">List of hospital in China</a></li>
-					<li><a href="" title="">List of hospital in Hongkong</a></li>
+				<ul class="cornerUl">
+					<li><a href="" title="" class="title">Who choose MHC</a></li>
+					<li><a href="" title="" class="title">List of hospital in China</a></li>
+					<li><a href="" title="" class="title">List of hospital in Hongkong</a></li>
+					<a href="/" title="More" class="more">More>></a>
 
 				</ul>
 			</li>

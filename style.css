@@ -12,7 +12,7 @@ TAGS: mhc, sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, star
 @import url('examples/2c-l.css');
 
 /* Just some example content */
-/* headeråŒºåŸŸæ ‡é¢˜å’Œæè¿°éƒ¨ä»½ */
+/* headerÇøÓò±êÌâºÍÃèÊö²¿·İ */
 div#header h1
 {
 	font: bold 2.8em Arial,Sans-Serif;
@@ -26,7 +26,7 @@ div#blog-description
 	padding: 2px 0 0 20px;
 }
 
-/* è®¾ç½®è¯­è¨€åŒºåŸŸ */
+/* ÉèÖÃÓïÑÔÇøÓò */
 div#language-setting
 {
 	background: url(images/language-setting-bg.png) no-repeat;
@@ -189,7 +189,7 @@ float:right;
 text-align:right;
 }
 
-/* ä¾§è¾¹æ åŒºåŸŸ */
+/* ²à±ßÀ¸ÇøÓò */
 div.sidebar h3 
 {
 	font-size:1.2em;
@@ -204,17 +204,6 @@ div#primary
 div#primary a
 {
 	color: #B33C1C;
-}
-
-
-div.sidebar input#s {
-width:7em;
-}
-
-div.sidebar li 
-{
-	list-style:none;
-	margin:0 0 2em;
 }
 
 div#primary h3
@@ -280,11 +269,23 @@ div#secondary h3
 	line-height: 50px;
 }
 
+div#secondary a.title
+{
+	color: #BC3C1C;
+}
+
+div#secondary a.more
+{
+	color: #929292;
+	line-height: 48px;
+	text-decoration: none;
+	margin-left: 200px;
+}
+
 div.sidebar li 
 {
 	list-style:none;
 	margin:0 0 2em;
-
 }
 
 div.sidebar li form 
@@ -293,8 +294,10 @@ div.sidebar li form
 	padding:0;
 }
 
-div.sidebar ul ul {
-margin:0 0 0 1em;
+div.sidebar ul ul 
+{
+	padding: 0 0 0 1em;
+	background-color: #F3F3F3;
 }
 
 
@@ -302,7 +305,7 @@ div.sidebar ul ul li
 {
 	list-style: none;
 	margin: 0;
-
+	padding-top: 10px;
 }
 
 div.sidebar ul ul ul {
@@ -317,7 +320,7 @@ div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
 float:left;
 }
 
-/* footeråŒºåŸŸ */
+/* footerÇøÓò */
 div#footer 
 {
 	margin:0 auto;
@@ -330,7 +333,7 @@ div#footer
 div#footer-info{
 	padding-left:30px;
 	height:95px;
-	/*IE8ä¸æ ‡å‡†æ¸¸è§ˆå™¨å‚ç›´å¯¹é½*/
+	/*IE8Óë±ê×¼ÓÎÀÀÆ÷´¹Ö±¶ÔÆë*/
 	display: table-cell;
 	vertical-align:middle;
 	font-family : arial;
@@ -357,7 +360,7 @@ padding:0;
 }
 
 
-/* æ ‡é¢˜å’Œå¯¼èˆªèœå•åŒºåŸŸ */
+/* ±êÌâºÍµ¼º½²Ëµ¥ÇøÓò */
 div#title-nav{
 	background: url(images/nav-menu-bg.png) no-repeat;
 	width: 1143px;
@@ -370,7 +373,7 @@ div#title{
 	margin: 20px 10px 0 100px
 }
 
-/* å¯¼èˆªèœå• START */
+/* µ¼º½²Ëµ¥ START */
 
 .menubar {
 	float:right;
@@ -378,56 +381,56 @@ div#title{
 }
 
 .menubar ul.menus li {
-	float:left; /* é å·¦æµ®åŠ¨ */
-	list-style:none; /* æ¸…ç©ºåˆ—è¡¨é£æ ¼ */
-	margin-right:8px; /* å³ä¾§çš„é—´éš” */
+	float:left; /* ¿¿×ó¸¡¶¯ */
+	list-style:none; /* Çå¿ÕÁĞ±í·ç¸ñ */
+	margin-right:8px; /* ÓÒ²àµÄ¼ä¸ô */
 	height:60px;
 	width:100px;
 	overflow:visible;
 }
-/* èœå•é¡¹é“¾æ¥ */
+/* ²Ëµ¥ÏîÁ´½Ó */
 .menubar ul.menus li a {
-	padding:6px 10px 34px 10px; /* å†…è¾¹è· */
-	display:block; /* æ˜¾ç¤ºä¸ºå— */
-	color:#FFF; /* æ–‡å­—é¢œè‰² */
-	background:transparent; /* èƒŒæ™¯é¢œè‰² */
-	text-decoration:none; /* æ²¡æœ‰ä¸‹æ¨ªçº¿ */
+	padding:6px 10px 34px 10px; /* ÄÚ±ß¾à */
+	display:block; /* ÏÔÊ¾Îª¿é */
+	color:#FFF; /* ÎÄ×ÖÑÕÉ« */
+	background:transparent; /* ±³¾°ÑÕÉ« */
+	text-decoration:none; /* Ã»ÓĞÏÂºáÏß */
 	text-align: center;
 }
-/* å½“å‰èœå•ä½ç½® */
+/* µ±Ç°²Ëµ¥Î»ÖÃ */
 .menubar ul.menus ul {
 	position:absolute;
 }
-/* å½“å‰èœå•é¡¹é“¾æ¥ */
+/* µ±Ç°²Ëµ¥ÏîÁ´½Ó */
 .menubar ul.menus li.current-cat a {
-	background:url(images/menu-hover-bg.png) no-repeat; /* èƒŒæ™¯å›¾ç‰‡ */
+	background:url(images/menu-hover-bg.png) no-repeat; /* ±³¾°Í¼Æ¬ */
 }
-/* é€‰ä¸­èœå•é¡¹é“¾æ¥ */
+/* Ñ¡ÖĞ²Ëµ¥ÏîÁ´½Ó */
 .menubar ul.menus li a:hover {
-	background:url(images/menu-hover-bg.png) no-repeat; /* èƒŒæ™¯å›¾ç‰‡ */
+	background:url(images/menu-hover-bg.png) no-repeat; /* ±³¾°Í¼Æ¬ */
 }
-/* äºŒçº§èœå• */
+/* ¶ş¼¶²Ëµ¥ */
 .menubar ul.children {
-	display:none; /* åˆå§‹åŒ–é¡µé¢æ—¶ä¸æ˜¾ç¤ºå‡ºæ¥ */
+	display:none; /* ³õÊ¼»¯Ò³ÃæÊ±²»ÏÔÊ¾³öÀ´ */
 	padding:0;
 	margin:0;
 }
-/* äºŒçº§èœå•çš„èœå•é¡¹ */
+/* ¶ş¼¶²Ëµ¥µÄ²Ëµ¥Ïî */
 .menubar ul.children li {
-	float:none; /* å‚ç›´æ’åˆ— */
+	float:none; /* ´¹Ö±ÅÅÁĞ */
 	margin:0;
 	padding:0;
 }
-/* äºŒçº§èœå•çš„å½“å‰èœå•é¡¹é“¾æ¥ */
+/* ¶ş¼¶²Ëµ¥µÄµ±Ç°²Ëµ¥ÏîÁ´½Ó */
 .menubar ul.children li a {
 	background:#FFF;
-	width:80px; /* å¯¹ IE6 æ¥è¯´ååˆ†å¾ˆé‡è¦ */
+	width:80px; /* ¶Ô IE6 À´ËµÊ®·ÖºÜÖØÒª */
 	color:#FF8270;
 }
-/* äºŒçº§èœå•é€‰ä¸­é“¾æ¥ */
+/* ¶ş¼¶²Ëµ¥Ñ¡ÖĞÁ´½Ó */
 .menubar ul.children li a:hover {
 	background:#FF8270;
-	width:80px; /* å¯¹ IE6 æ¥è¯´ååˆ†å¾ˆé‡è¦ */
+	width:80px; /* ¶Ô IE6 À´ËµÊ®·ÖºÜÖØÒª */
 	color:#FFF;
 }
-/* å¯¼èˆªèœå• END */
+/* µ¼º½²Ëµ¥ END */

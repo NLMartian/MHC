@@ -55,9 +55,8 @@
 
 		<div id="language-setting">
 			<select id="language">
-				<option value="English">English</option>
-				<option value="Chinese">Chinese</option>
-				<option value="default" selected="selected">Choose your language</option>
+				<option value="English">English     </option>
+				<option value="Chinese">Chinese     </option>
 			</select>
 		</div><!--	#language-setting -->
 	</div><!--  #header -->
