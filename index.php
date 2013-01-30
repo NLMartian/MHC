@@ -2,8 +2,16 @@
 
 
 	<div id="container">
+		
 		<div id="content">
 
+			<div id="companies-board">
+					<div id="companies-board-title" class="cornerTitle"></div>
+					<div id="companies-board-border">
+						<div id="companies-board-content"></div>
+					</div>
+			</div>
+		
 			<div id="nav-above" class="navigation">
 				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
 				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>

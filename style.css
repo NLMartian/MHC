@@ -44,6 +44,32 @@ div#language-setting select
 	right: 10px;
 }
 
+/* 保险公司 START*/
+/* 红色标题部分*/
+div#companies-board-title{
+	background:#B33C1C;
+	width:300px;
+	height:40px;
+	margin-bottom:-10px;
+}
+
+
+div#companies-board-border{
+	background:#B33C1C;
+	width:778px;
+	height:400px;
+	padding:1px 1.5px 1px 1.5px;
+}
+
+div#companies-board-content{
+	background:#FFF;
+	width:779px;
+	height:400px;
+}
+
+
+/*保险公司 END */
+ 
 div#menu {
 background:#EEE;
 height:1.5em;
