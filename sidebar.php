@@ -20,7 +20,9 @@
 			<li id="pages">
 				<h3 class="cornerTitle"><?php _e( 'Health information', 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
-					<?php wp_list_pages('title_li=&sort_column=menu_order' ) ?>
+					<li><a href="" title="" class="title">Who choose MHC</a></li>
+					<li><a href="" title="" class="title">List of hospital in China</a></li>
+					<li><a href="" title="" class="title">List of hospital in Hongkong</a></li>
 					<a href="/" title="More" class="more">More>></a>
 				</ul>
 			</li>
@@ -28,9 +30,15 @@
 			<li id="categories">
 				<h3 class="cornerTitle"><?php _e( 'Insurance news', 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
-					<li><a href="" title="" class="title">Who choose MHC</a></li>
-					<li><a href="" title="" class="title">List of hospital in China</a></li>
-					<li><a href="" title="" class="title">List of hospital in Hongkong</a></li>
+					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
+					<p>Presentation: "Medical Insurance" 
+					The presentation
+					"Medical Insurance" prepared
+					by Abacre Group'staff, 
+					Jacob Sacuto and Jonathan
+					Chapon, was presented in
+					UFE.....
+					</p>
 					<a href="/" title="More" class="more">More>></a>
 
 				</ul>
