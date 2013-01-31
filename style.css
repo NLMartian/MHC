@@ -70,6 +70,26 @@ div#companies-board-content{
 
 /*保险公司 END */
  
+ /*内容区域 START*/
+ div.post
+ {
+	border-bottom: 1.5px solid #F0F0F0;
+ }
+
+ div.post a
+ {
+	text-decoration: none;
+	color: #DE5441;
+	cursor: pointer;
+ }
+
+div.post p
+{
+	color: #AFAFAF;
+	font-size: 16px;
+}
+/*内容区域END*/
+
 div#menu {
 background:#EEE;
 height:1.5em;
@@ -104,12 +124,14 @@ div#menu ul li:hover ul {
 left:auto;
 }
 
-.entry-title,.entry-meta {
-clear:both;
+.entry-title 
+{
+	clear:both;
 }
 
-div#container {
-margin-top:2em;
+div#container 
+{
+	margin-top:2em;
 }
 
 form#commentform .form-label {
@@ -379,7 +401,7 @@ input#author,input#email,input#url,div.navigation div {
 width:50%;
 }
 
-div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
+div.gallery *,div.sidebar div,div.sidebar ul {
 margin:0;
 padding:0;
 }
