@@ -8,7 +8,34 @@
 			<div id="companies-board">
 					<div id="companies-board-title" class="cornerTitle"></div>
 					<div id="companies-board-border">
-						<div id="companies-board-content"></div>
+						<div id="companies-board-content">
+						<!-- 查询“保险公司分类”的链接 -->
+						<div id="insurance-grid">
+							<div class="insurance-row">
+								<?php 
+								$args = array(
+									'orderby' => 'id',
+									'parent' => '5'
+									);
+								$categories = get_categories($args);
+								$inCount = 0;
+								foreach($categories as $category) {
+									$inCount++;
+								?>
+								<div class="insurance<?php //echo inCount; ?>">
+									<a href="<?php echo get_category_link( $category->term_id ); ?>">
+										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category->category_nicename ; ?>.jpg"  />
+									</a>
+								</div>
+								<?php if(($inCount % 4) == 0) {?>
+								</div><div class="insurance-row">
+								<?php
+									} 
+								}
+								?>
+							</div>
+						</div>
+						</div>
 					</div>
 			</div>
 		
