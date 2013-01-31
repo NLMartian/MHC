@@ -33,7 +33,7 @@ div#language-setting
 	width: 1100px;
 	height: 251px;
 	margin: 20px auto 0 auto;
-	float:none
+	float: none;
 }
 
 div#language-setting select
@@ -108,7 +108,7 @@ left:auto;
 clear:both;
 }
 
-div#container,div#primary {
+div#container {
 margin-top:2em;
 }
 
@@ -223,7 +223,7 @@ div.sidebar h3
 
 div#primary
 {
-	
+	margin-top: 32px;
 }
 
 div#primary a
