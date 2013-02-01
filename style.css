@@ -49,8 +49,13 @@ div#language-setting select
 div#companies-board-title{
 	background:#B33C1C;
 	width:240px;
-	height:40px;
+	height:38px;
 	margin-bottom:-10px;
+	color:#FFF;
+	text-align:center;
+	font-family : arial;
+	font-size:18px;
+	padding: 9px 0 0 0;
 }
 
 
@@ -62,38 +67,66 @@ div#companies-board-border{
 }
 
 div#companies-board-content{
-	background:#FFF;
+	background:#f0f0f0;
 	width:779px;
 	height:290px;
+	overflow:hidden;
+	
+	width:778px \9;
 }
 
 div.insurance-row{
-	height:96.66px;
+	height:94px;
+}
+
+div.separator{
+	padding: 0 20px 0;
+    margin:  0 20px;
+    line-height: 1px;
+    text-align: center;
+	background:#dadbdb;
+	height:2px;
 }
 
 /*For Firefox Chrome*/
 div.insurance{
 	width:194px;
-	height:96.66px;
+	height:95px;
 	overflow:hidden;
 	text-align:center;
 	display:table;
 	float:left;
 	margin:0;
 	position:relative;
+	
+	/*For IE*/
+	width:190px \9;
+	display:inline;
 }
 div.insurance a {
+	background:#f0f0f0;
 	display:table-cell;
 	vertical-align:middle;
-	width:194px;
-	height:96.66px;
+	width:180px;
+	height:95px;
+	
+	/*For IE*/
+	width:180px \9;
 }
 
 div.insurance a img{
 	margin:0 auto;
-	max-width:194px;
-	max-height:96.66px;
+	max-width:160px;
+	max-height:80px;
+	
+	border: none;
+	
+	/*For IE*/
+	width:160px \9;
 }
+
+div.insurance a img:hover{border: none;}
+
 /*For IE7*/
 *+html .insurance a{
 	position:absolute;

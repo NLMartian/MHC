@@ -6,7 +6,7 @@
 		<div id="content">
 
 			<div id="companies-board">
-					<div id="companies-board-title" class="cornerTitle"></div>
+					<div id="companies-board-title" class="cornerTitle">Insurance Companies</div>
 					<div id="companies-board-border">
 						<div id="companies-board-content">
 						<!-- 查询“保险公司分类”的链接 -->
@@ -28,7 +28,9 @@
 									</a>
 								</div>
 								<?php if(($inCount % 4) == 0) {?>
-								</div><div class="insurance-row">
+								</div>
+								<div class="separator"></div>
+								<div class="insurance-row">
 								<?php
 									} 
 								}
