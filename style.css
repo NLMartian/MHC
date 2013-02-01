@@ -47,7 +47,7 @@ div#language-setting select
 /* 保险公司 START*/
 /* 红色标题部分*/
 div#companies-board-title{
-	background:#B33C1C;
+	background:#c44c2c;
 	width:240px;
 	height:38px;
 	margin-bottom:-10px;
@@ -60,7 +60,7 @@ div#companies-board-title{
 
 
 div#companies-board-border{
-	background:#B33C1C;
+	background:#c44c2c;
 	width:778px;
 	height:290px;
 	padding:1px 1.5px 1px 1.5px;
@@ -77,19 +77,19 @@ div#companies-board-content{
 
 div.insurance-row{
 	height:94px;
+	background:#f0f0f0;
 }
 
 div.separator{
-	padding: 0 20px 0;
-    margin:  0 20px;
-    line-height: 1px;
-    text-align: center;
+	margin:0 20px;
+	padding:1px 0;
 	background:#dadbdb;
-	height:2px;
+	height:1px;
 }
 
 /*For Firefox Chrome*/
 div.insurance{
+	background:#f0f0f0;
 	width:194px;
 	height:95px;
 	overflow:hidden;
