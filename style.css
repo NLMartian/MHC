@@ -44,6 +44,16 @@ div#language-setting select
 	right: 10px;
 }
 
+/*侧边栏红竖直分割线 */
+div#vertical-separator{	
+	float:right;
+	width:3px;
+	background:#f4d0b5;
+	margin:30px 12px 20px 0;
+	padding-bottom:980px;
+	filter:blur(direction=90,strenght=60);
+}
+
 /* 保险公司 START*/
 /* 红色标题部分*/
 div#companies-board-title{
@@ -57,36 +67,29 @@ div#companies-board-title{
 	font-size:18px;
 	padding: 9px 0 0 0;
 }
-
-
 div#companies-board-border{
-	background:#c44c2c;
+	background:#e37263;
 	width:778px;
 	height:290px;
-	padding:1px 1.5px 1px 1.5px;
+	padding:1.5px 2px 1.5px 2px;
 }
-
 div#companies-board-content{
 	background:#f0f0f0;
-	width:779px;
-	height:290px;
+	width:778px;
+	height:289px;
 	overflow:hidden;
-	
 	width:778px \9;
 }
-
 div.insurance-row{
 	height:94px;
 	background:#f0f0f0;
 }
-
 div.separator{
 	margin:0 20px;
 	padding:1px 0;
 	background:#dadbdb;
 	height:1px;
 }
-
 /*For Firefox Chrome*/
 div.insurance{
 	background:#f0f0f0;
@@ -113,20 +116,15 @@ div.insurance a {
 	/*For IE*/
 	width:180px \9;
 }
-
 div.insurance a img{
 	margin:0 auto;
 	max-width:160px;
 	max-height:80px;
-	
 	border: none;
-	
 	/*For IE*/
 	width:160px \9;
 }
-
 div.insurance a img:hover{border: none;}
-
 /*For IE7*/
 *+html .insurance a{
 	position:absolute;
@@ -155,8 +153,6 @@ div.insurance a img:hover{border: none;}
 	width:expression(this.width>200?“200px”:“auto”);
 	height:expression(this.height>140?“140px”:“auto”);
 }
-
-
 /*保险公司 END */
  
  /*内容区域 START*/

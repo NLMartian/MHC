@@ -2,9 +2,7 @@
 
 <div id="main">
 	<div id="container">
-		
 		<div id="content">
-
 			<div id="companies-board">
 					<div id="companies-board-title" class="cornerTitle">Insurance Companies</div>
 					<div id="companies-board-border">
@@ -67,6 +65,9 @@
 
 		</div><!-- #content -->
 	</div><!-- #container -->
+	
+	<!--竖直分割线-->
+	<div id="vertical-separator"></div>
 	<?php get_sidebar() ?>
 </div>
 <?php get_footer() ?>
