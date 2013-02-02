@@ -24,6 +24,8 @@ div#header h1
 div#blog-description
 {
 	padding: 2px 0 0 20px;
+	font-size:14px;
+	font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑;
 }
 
 /* 设置语言区域 */
@@ -51,7 +53,7 @@ div#vertical-separator{
 	background:#f4d0b5;
 	margin:30px 12px 20px 0;
 	padding-bottom:980px;
-	filter:blur(direction=90,strenght=60);
+	/*filter:glow(color=#000000,strength=200);*/
 }
 
 /* 保险公司 START*/

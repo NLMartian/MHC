@@ -29,9 +29,9 @@
 	
 		<div id="title-nav">
 			<div id="title">
-				<h1 id="blog-title"><span><?php bloginfo('name'); ?></span></h1>
+				<h1 id="blog-title"><span><?php //bloginfo('name'); ?></span></h1>
 				<div id="blog-description">
-					<?php bloginfo('description') ?>
+					<?php //bloginfo('description') ?>
 				</div>
 			</div>
 			
