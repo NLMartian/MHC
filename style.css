@@ -512,25 +512,49 @@ div#title{
 
 .menubar {
 	float:right;
-	margin:56px 60px 10px 0;
+	margin:50px 38px 10px 0;
 }
 
 .menubar ul.menus li {
 	float:left; /* 靠左浮动 */
 	list-style:none; /* 清空列表风格 */
-	margin-right:8px; /* 右侧的间隔 */
+	margin-right:30px; /* 右侧的间隔 */
 	height:60px;
 	width:100px;
 	overflow:visible;
 }
+
+.menubar ul.menus li.cat-item-2{
+	margin-right:52px; /* 右侧的间隔 */
+}
+
+.menubar ul.menus li.cat-item-3{
+	margin-right:40px; /* 右侧的间隔 */
+}
+
+.menubar ul.menus li.cat-item-4{
+	margin-right:25px; /* 右侧的间隔 */
+}
+
+.menubar ul.menus li.cat-item-5{
+	margin-right:24px; /* 右侧的间隔 */
+}
+/*首页的链接*/
+.menubar ul.menus li.cat-item-1 a{
+	padding-bottom:26px;
+}
 /* 菜单项链接 */
 .menubar ul.menus li a {
-	padding:6px 10px 34px 10px; /* 内边距 */
+	padding:6px 0 14px 0; /* 内边距 */
+	/*IE上的内边距 */
+	padding:6px 0 12px 0\9;
 	display:block; /* 显示为块 */
 	color:#FFF; /* 文字颜色 */
 	background:transparent; /* 背景颜色 */
 	text-decoration:none; /* 没有下横线 */
 	text-align: center;
+	font-family:arial,"Microsoft YaHei",微软雅黑;
+	font-size:16px;
 }
 /* 当前菜单位置 */
 .menubar ul.menus ul {
@@ -542,7 +566,8 @@ div#title{
 }
 /* 选中菜单项链接 */
 .menubar ul.menus li a:hover {
-	background:url(images/menu-hover-bg.png) no-repeat; /* 背景图片 */
+	/*background:url(images/menu-hover-bg.png) no-repeat; */
+	color:#590202;
 }
 /* 二级菜单 */
 .menubar ul.children {

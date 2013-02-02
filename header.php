@@ -39,9 +39,9 @@
 				<ul class="menus" id="menus">
 					<?php
 						if (is_home()) {
-							$home_menu_class = 'current-cat';
+							$home_menu_class = 'current-cat cat-item-1';
 						} else {
-							$home_menu_class = 'cat-item';
+							$home_menu_class = 'cat-item cat-item-1';
 						}
 					?>
 					<li class="<?php echo($home_menu_class); ?>">
