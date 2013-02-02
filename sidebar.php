@@ -6,7 +6,7 @@
 		<div id="contact-info">
 			<span id="contact-addr">Shanghai<span><br/>
 			<span id="contact-num">+86 15901980381</span><br/>
-			<span id="contact-email"><a href="/" title="<?php _e('Email', 'sandbox')?>">adbcde@gmail.com</a></span> <br/>
+			<span id="contact-email"><a href="/" title="<?php _e('Email', 'sandbox')?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
 			<span>Contact us online</span>

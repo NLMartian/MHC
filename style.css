@@ -327,31 +327,38 @@ text-align:right;
 /* ²à±ßÀ¸ÇøÓò */
 div.sidebar h3 
 {
-	font-size:1.2em;
+	font-size: 1.1em;
 }
 
 div#primary
 {
 	margin-top: 32px;
+	border-bottom: 2px solid #F0F0F0;
 }
 
 div#primary a
 {
-	color: #B33C1C;
+	color: #992D14;
 }
 
 div#primary h3
 {
-	color: #B33C1C;
+	color: #B23C1B;
 	background: url(images/contact-us-bg.png) no-repeat;
-	line-height: 40px;
+	line-height: 33px;
 	padding-left: 20px;
+	margin-bottom: 5px;
+}
+
+div#primary img
+{
+	
 }
 
 div#contact-img
 {
 	float: left;
-	padding: 20px 10px;
+	padding: 10px 5px 10px 10px;
 }
 
 div#contact-info
@@ -367,7 +374,7 @@ div#contact-info span#contact-addr
 
 div#contact-info span#contact-num
 {
-	color: #494949;
+	color: #484848;
 	line-height: 30px;
 }
 
@@ -406,15 +413,20 @@ div#secondary h3
 
 div#secondary a.title
 {
-	color: #BC3C1C;
+	color: #992D14;
 }
 
 div#secondary a.more
 {
-	color: #929292;
+	color: #787878;
 	line-height: 48px;
 	text-decoration: none;
 	margin-left: 200px;
+}
+
+div#secondary p
+{
+	color: #535353;
 }
 
 div.sidebar li 
