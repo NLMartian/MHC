@@ -20,9 +20,16 @@
 			<li id="pages">
 				<h3 class="cornerTitle"><?php _e( 'Health information', 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
-					<li><a href="" title="" class="title">Who choose MHC</a></li>
-					<li><a href="" title="" class="title">List of hospital in China</a></li>
-					<li><a href="" title="" class="title">List of hospital in Hongkong</a></li>
+					<?php 
+						global $post;
+						$args = array();
+						$myposts = get_posts();
+
+						foreach($myposts as $post) :
+						setup_postdata($post);
+					?>
+					<li><a href="" title="" class="title"><?php the_title(); ?></a></li>
+					<?php endforeach; ?>
 					<a href="/" title="More" class="more">More>></a>
 				</ul>
 			</li>
