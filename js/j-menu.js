@@ -14,6 +14,11 @@ jQuery(document).ready(function(){
 				mouseover_tid[index] = setTimeout(function() {
 					jQuery(_self).find('ul:eq(0)').slideDown(400);
 				}, 400);
+				
+				//淡出select
+				if(jQuery(this).attr('class') == 'cat-item cat-item-5') {
+					jQuery('select#language').fadeOut(400);
+				}
 			},
 
 			function(){
@@ -22,6 +27,11 @@ jQuery(document).ready(function(){
 				mouseout_tid[index] = setTimeout(function() {
 					jQuery(_self).find('ul:eq(0)').slideUp(400);
 				}, 400);
+				
+				//淡入select
+				if(jQuery(this).attr('class') == 'cat-item cat-item-5') {
+					jQuery('select#language').fadeIn(600);
+				}
 			}
 
 		);

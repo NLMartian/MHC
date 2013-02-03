@@ -620,11 +620,14 @@ div#title{
 	color:#FFF;
 }
 .menubar ul.children li.submenubg-bottom{
-	background:url(images/submenu-bg-bottom.png) no-repeat;
+	background:url(imag/* 
+
+ */* 
+
+ */s/submenu-bg-bottom.png) no-repeat;
 	background-position:top;
 	width:147px;
 	height:19px;
 	overflow:hidden;
 }
-
 /* µ¼º½²Ëµ¥ END */
