@@ -3,6 +3,9 @@ var mouseout_tid = [];
 
 jQuery(document).ready(function(){
 	jQuery('#menus > li').each(function(index){
+	
+		// 去除titile属性
+		jQuery(this).find('a').removeAttr('title');
 		jQuery(this).hover(
 
 			function(){
@@ -29,4 +32,5 @@ jQuery(document).ready(function(){
 			jQuery(this).append('<li class="submenubg-bottom"></li>');
 		}
 	);
+	
 });

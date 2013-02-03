@@ -598,6 +598,10 @@ div#title{
 	width:147px;
 	background:url(images/submenu-bg-body.png) repeat-y;
 }
+/* 当前选中菜单的二级菜单 */
+.menubar ul.menus li.current-cat ul.children li a {
+	background:transparent;
+}
 /* 二级菜单的当前菜单项链接 */
 .menubar ul.children li a {
 	background:transparent;
