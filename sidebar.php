@@ -11,7 +11,7 @@
 		<div id="contact-way">
 			<span>Contact us online</span>
 			<img src="<?php bloginfo('template_directory');?>/images/contact-skype.png" alt="Skype" title="Skype" style="padding-left: 15px;"/>
-			<img src="<?php bloginfo('template_directory');?>/images/contact-msn.png" alt="MSN" title="MSN" />
+			<img src="<?php bloginfo('template_directory');?>/images/contact-msn.png" alt="MSN" title="MSN" style="margin-left: -8px;"/>
 		</div>
 	</div><!-- #primary .sidebar -->
 
@@ -22,13 +22,13 @@
 				<ul class="cornerUl">
 					<?php 
 						global $post;
-						$args = array();
-						$myposts = get_posts();
+						$args = array('category' => 3);
+						$myposts = get_posts($args);
 
 						foreach($myposts as $post) :
 						setup_postdata($post);
 					?>
-					<li><a href="" title="" class="title"><?php the_title(); ?></a></li>
+					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
 					<a href="/" title="More" class="more">More>></a>
 				</ul>
@@ -38,14 +38,16 @@
 				<h3 class="cornerTitle"><?php _e( 'Insurance news', 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
-					<p>Presentation: "Medical Insurance" 
-					The presentation
-					"Medical Insurance" prepared
-					by Abacre Group'staff, 
-					Jacob Sacuto and Jonathan
-					Chapon, was presented in
-					UFE.....
-					</p>
+					<?php 
+						global $news;
+						$args = array('category' => 4, 'numberposts' => 1);
+						$mynews = get_posts($args);
+
+						foreach($mynews as $news) :
+						setup_postdata($news);
+					?>
+					<p><?php the_content(); ?></p>
+					<?php endforeach; ?>
 					<a href="/" title="More" class="more">More>></a>
 
 				</ul>

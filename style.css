@@ -386,6 +386,7 @@ div#contact-info span#contact-email
 div#contact-way
 {
 	clear: both;
+	padding-bottom: 5px;
 }
 
 div#contact-way span
