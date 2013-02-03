@@ -22,7 +22,7 @@
 								?>
 								<div class="insurance<?php //echo inCount; ?>">
 									<a href="<?php echo get_category_link( $category->term_id ); ?>">
-										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category->category_nicename ; ?>.jpg"  />
+										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category->category_nicename ; ?>.png"  />
 									</a>
 								</div>
 								<?php if(($inCount % 4) == 0) {?>
