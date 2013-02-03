@@ -1,22 +1,32 @@
-/*
-Author: mg12
-Feature: MenuList
-Update: 2009/12/13
-Tutorial URL: http://www.neoease.com/wordpress-menubar-6/
-*/
+var mouseover_tid = [];
+var mouseout_tid = [];
 
 jQuery(document).ready(function(){
-	jQuery('#menus > li').each(function(){
+	jQuery('#menus > li').each(function(index){
 		jQuery(this).hover(
 
 			function(){
-				jQuery(this).find('ul:eq(0)').show();
+				var _self = this;
+				clearTimeout(mouseout_tid[index]);
+				mouseover_tid[index] = setTimeout(function() {
+					jQuery(_self).find('ul:eq(0)').slideDown(400);
+				}, 400);
 			},
 
 			function(){
-				jQuery(this).find('ul:eq(0)').hide();
+				var _self = this;
+				clearTimeout(mouseover_tid[index]);
+				mouseout_tid[index] = setTimeout(function() {
+					jQuery(_self).find('ul:eq(0)').slideUp(400);
+				}, 400);
 			}
 
 		);
 	});
+	
+	//子菜单下方添加圆角添加背景
+	jQuery('ul.children').each(function() {
+			jQuery(this).append('<li class="submenubg-bottom"></li>');
+		}
+	);
 });
