@@ -16,9 +16,9 @@ jQuery(document).ready(function(){
 				}, 400);
 				
 				//淡出select
-				if(jQuery(this).attr('class') == 'cat-item cat-item-5') {
+				/*if(jQuery(this).attr('class') == 'cat-item cat-item-5') {
 					jQuery('select#language').fadeOut(400);
-				}
+				}*/
 			},
 
 			function(){
@@ -29,9 +29,9 @@ jQuery(document).ready(function(){
 				}, 400);
 				
 				//淡入select
-				if(jQuery(this).attr('class') == 'cat-item cat-item-5') {
+				/*if(jQuery(this).attr('class') == 'cat-item cat-item-5') {
 					jQuery('select#language').fadeIn(600);
-				}
+				}*/
 			}
 
 		);
