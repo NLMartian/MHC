@@ -4,12 +4,12 @@
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>
 		<div id="contact-info">
-			<span id="contact-addr">Shanghai<span><br/>
+			<span id="contact-addr"><?php _e("<!--:zh-->上海<!--:--><!--:en-->Shanghai<!--:-->"); ?><span><br/>
 			<span id="contact-num">+86 15901980381</span><br/>
 			<span id="contact-email"><a href="/" title="<?php _e('Email', 'sandbox')?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
-			<span>Contact us online</span>
+			<span><?php _e("<!--:zh-->在线联系我们<!--:--><!--:en-->Contact us online<!--:-->"); ?></span>
 			<img src="<?php bloginfo('template_directory');?>/images/contact-skype.png" alt="Skype" title="Skype" style="padding-left: 15px;"/>
 			<img src="<?php bloginfo('template_directory');?>/images/contact-msn.png" alt="MSN" title="MSN" style="margin-left: -8px;"/>
 		</div>
@@ -30,7 +30,7 @@
 					?>
 					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
-					<a href="/" title="More" class="more">More>></a>
+					<a href="/" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 
@@ -48,7 +48,7 @@
 					?>
 					<p><?php the_content(); ?></p>
 					<?php endforeach; ?>
-					<a href="/" title="More" class="more">More>></a>
+					<a href="/" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>
