@@ -3,3 +3,8 @@ jQuery(document).ready(function($) {
 	jQuery('.cornerUl').corner('bottom');
 	jQuery('#companies-board-content').corner("round 8px").parent().corner("round 10px");
 });
+
+function changeLanguage(obj) {
+	console.log(obj);
+	document.location.href = obj;
+}
