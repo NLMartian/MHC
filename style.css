@@ -568,6 +568,8 @@ div#title{
 	text-align: center;
 	font-family:arial,"Microsoft YaHei",微软雅黑;
 	font-size:16px;
+	/*height:56px;*/
+	/*width:100px;*/
 }
 /* 当前菜单位置 */
 .menubar ul.menus ul {
@@ -584,6 +586,8 @@ div#title{
 }
 /* 二级菜单 */
 .menubar ul.children {
+	position:absoult;
+	top:127px;	
 	display:none; /* 初始化页面时不显示出来 */
 	padding:0 1px 0 1px;
 	margin:0;
@@ -621,11 +625,7 @@ div#title{
 	color:#FFF;
 }
 .menubar ul.children li.submenubg-bottom{
-	background:url(imag/* 
-
- */* 
-
- */s/submenu-bg-bottom.png) no-repeat;
+	background:url(images/submenu-bg-bottom.png) no-repeat;
 	background-position:top;
 	width:147px;
 	height:19px;

@@ -5,6 +5,5 @@ jQuery(document).ready(function($) {
 });
 
 function changeLanguage(obj) {
-	console.log(obj);
 	document.location.href = obj;
 }
