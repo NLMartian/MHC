@@ -55,8 +55,6 @@
 				</div>
 			</div><!-- .post -->
 
-<?php comments_template() ?>
-
 <?php endwhile; ?>
 			<div id="nav-below" class="navigation">
 				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
