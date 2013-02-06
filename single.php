@@ -1,58 +1,73 @@
 <?php get_header() ?>
 
+<div id="main">
 	<div id="container">
 		<div id="content">
-
-<?php the_post() ?>
-
+			<div id="companies-board">
+					<div id="companies-board-title" class="cornerTitle">Insurance Companies</div>
+					<div id="companies-board-border">
+						<div id="companies-board-content">
+						<!-- 查询“保险公司分类”的链接 -->
+						<div id="insurance-grid">
+							<div class="insurance-row">
+								<?php 
+								$args = array(
+									'orderby' => 'id',
+									'parent' => '5'
+									);
+								$categories = get_categories($args);
+								$inCount = 0;
+								foreach($categories as $category) {
+									$inCount++;
+								?>
+								<div class="insurance<?php //echo inCount; ?>">
+									<a href="<?php echo get_category_link( $category->term_id ); ?>">
+										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category->category_nicename ; ?>.png"  />
+									</a>
+								</div>
+								<?php if(($inCount % 4) == 0) {?>
+								</div>
+								<div class="separator"></div>
+								<div class="insurance-row">
+								<?php
+									} 
+								}
+								?>
+							</div>
+						</div>
+						</div>
+					</div>
+			</div>
+		
 			<div id="nav-above" class="navigation">
-				<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
-				<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
+				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
+				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
 			</div>
 
+<?php while ( have_posts() ) : the_post() ?>
+
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
-				<h2 class="entry-title"><?php the_title() ?></h2>
+				<h2 class="entry-title"><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'sandbox'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a>
+				</h2>
 				<div class="entry-content">
-<?php the_content() ?>
-
-<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
-				</div>
-				<div class="entry-meta">
-					<?php printf( __( 'This entry was written by %1$s, posted on <abbr class="published" title="%2$sT%3$s">%4$s at %5$s</abbr>, filed under %6$s%7$s. Bookmark the <a href="%8$s" title="Permalink to %9$s" rel="bookmark">permalink</a>. Follow any comments here with the <a href="%10$s" title="Comments RSS to %9$s" rel="alternate" type="application/rss+xml">RSS feed for this post</a>.', 'sandbox' ),
-						'<span class="author vcard"><a class="url fn n" href="' . get_author_posts_url( $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'sandbox' ), $authordata->display_name ) . '">' . get_the_author() . '</a></span>',
-						get_the_time('Y-m-d'),
-						get_the_time('H:i:sO'),
-						the_date( '', '', '', false ),
-						get_the_time(),
-						get_the_category_list(', '),
-						get_the_tag_list( __( ' and tagged ', 'sandbox' ), ', ', '' ),
-						get_permalink(),
-						the_title_attribute('echo=0'),
-						esc_url( get_post_comments_feed_link() ) ) ?>
-
-<?php if ( ('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Comments and trackbacks open ?>
-					<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'sandbox' ), get_trackback_url() ) ?>
-<?php elseif ( !('open' == $post->comment_status) && ('open' == $post->ping_status) ) : // Only trackbacks open ?>
-					<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'sandbox' ), get_trackback_url() ) ?>
-<?php elseif ( ('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Only comments open ?>
-					<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'sandbox' ) ?>
-<?php elseif ( !('open' == $post->comment_status) && !('open' == $post->ping_status) ) : // Comments and trackbacks closed ?>
-					<?php _e( 'Both comments and trackbacks are currently closed.', 'sandbox' ) ?>
-<?php endif; ?>
-<?php edit_post_link( __( 'Edit', 'sandbox' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) ?>
-
+				<?php the_content( __( 'Read More <span class="meta-nav">&raquo;</span>', 'sandbox' ) ) ?>
+				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
 				</div>
 			</div><!-- .post -->
 
-			<div id="nav-below" class="navigation">
-				<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">&laquo;</span> %title' ) ?></div>
-				<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
-			</div>
-
 <?php comments_template() ?>
+
+<?php endwhile; ?>
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
+				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
+			</div>
 
 		</div><!-- #content -->
 	</div><!-- #container -->
-
-<?php get_sidebar() ?>
+	
+	<!--竖直分割线-->
+	<div id="vertical-separator"></div>
+	<?php get_sidebar() ?>
+</div>
 <?php get_footer() ?>

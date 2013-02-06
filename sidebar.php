@@ -22,7 +22,7 @@
 				<ul class="cornerUl">
 					<?php 
 						global $post;
-						$args = array('category' => 3);
+						$args = array('numberposts' => 3, 'category' => 3, 'order' => 'DESC', 'orderby' => 'post_date');
 						$myposts = get_posts($args);
 
 						foreach($myposts as $post) :
@@ -30,7 +30,12 @@
 					?>
 					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
-					<a href="/" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<?php
+						$health_information_id = get_cat_ID('Health information');
+
+						$health_information_link = get_category_link($health_information_id);
+					?>
+					<a href="<?php echo esc_url($health_information_link); ?>" title="View all posts under Health information" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 
@@ -48,7 +53,12 @@
 					?>
 					<p><?php the_content(); ?></p>
 					<?php endforeach; ?>
-					<a href="/" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<?php
+						$insurance_news_id = get_cat_ID('Individual health cover');
+
+						$insurance_news_link = get_category_link($insurance_news_id);
+					?>
+					<a href="<?php echo esc_url($insurance_news_link);?>" title="View all posts under Insurance news" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>
