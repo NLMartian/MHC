@@ -39,7 +39,6 @@ jQuery(document).ready(function(){
 	
 	//子菜单下方添加圆角添加背景
 	jQuery('ul.children').each(function() {
-			console.log("圆角");
 			jQuery(this).append('<li class="submenubg-bottom"></li>');
 		}
 	);

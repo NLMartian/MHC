@@ -30,7 +30,7 @@
 					?>
 					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
-					<a href="/" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<a href="<?php echo get_category_link(5); ?>" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 
@@ -48,7 +48,7 @@
 					?>
 					<p><?php the_content(); ?></p>
 					<?php endforeach; ?>
-					<a href="/" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<a href="<?php echo get_category_link(6); ?>" title="More" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>
