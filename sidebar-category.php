@@ -2,7 +2,7 @@
 		<ul class="xoxo">
 			<li id="companies">
 				<h3 class="cornerTitle"><?php _e('Insurance companies', 'sandbox')?></h3>
-				<ul class="cornerUl" style="padding-bottom: 25px;">
+				<ul class="cornerUl categoryUl">
 					<?php 
 						$args = array(
 							'orderby' => 'id',
