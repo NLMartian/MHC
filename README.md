@@ -6,7 +6,7 @@
 * cat5    健康信息
 * cat6   （可能不用分类）insurance news
 * cat7   （可能不用分类）首页文章
-* 
+* cat8	  联系我们（单独写category.php布局）
 ##联系信息作为一个page
 
 ##导航菜单主要有以下五个选项：
