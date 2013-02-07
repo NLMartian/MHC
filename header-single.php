@@ -53,10 +53,9 @@
 							'orderby' => 'ID',
 							'show_count' => 0,
 							'order' => 'ASC',
-							'hide_empty' => 1,
+							'hide_empty' => 0,
 							'title_li' => '',
-							'number' => 4,
-							'exclude_tree' => 5,6,7
+							'number' => 4
 						);
 						wp_list_categories($args); ?>
 				</ul>
@@ -64,18 +63,4 @@
 		</div>
 		<div style="clear:both;"></div>
 
-		<div id="language-setting">
-			<select id="language" onchange="changeLanguage(this.value)"?>">
-				<?php 
-					global $q_config;
-					foreach(qtrans_getSortedLanguages() as $language) {
-				?>
-					<option value="<?php echo htmlspecialchars_decode(qtrans_convertURL($url, $language), ENT_NOQUOTES); ?>" <?php if($q_config['language'] == $language) echo 'selected="selected"'?>><?php echo $q_config['language_name'][$language]; ?></option>
-				<?php 
-					
-					}
-				?>
-				
-			</select>
-		</div><!--	#language-setting -->
 	</div><!--  #header -->

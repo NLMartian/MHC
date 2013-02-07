@@ -13,16 +13,17 @@
 								<?php 
 								$args = array(
 									'orderby' => 'id',
-									'parent' => '5'
+									'parent' => 4,
+									'hide_empty' => 0
 									);
 								$categories = get_categories($args);
 								$inCount = 0;
 								foreach($categories as $category) {
 									$inCount++;
 								?>
-								<div class="insurance<?php //echo inCount; ?>">
-									<a href="<?php echo get_category_link( $category->term_id ); ?>">
-										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category->category_nicename ; ?>.png"  />
+								<div class="insurance">
+									<a href="<?php echo get_category_link( $category->term_id ); ?>" title="Permalink to <?php echo $category -> name; ?>">
+										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category -> category_nicename; ?>.png" />
 									</a>
 								</div>
 								<?php if(($inCount % 4) == 0) {?>

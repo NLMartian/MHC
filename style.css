@@ -179,6 +179,12 @@ div.post p
 	color: #AFAFAF;
 	font-size: 16px;
 }
+
+div.p1 h2
+{
+	margin-top: 0;
+}
+
 /*ÄÚÈÝÇøÓòEND*/
 
 div#menu {
@@ -222,7 +228,7 @@ left:auto;
 
 div#container 
 {
-	margin-top:2em;
+	margin-top: 30px;
 }
 
 form#commentform .form-label {
@@ -400,6 +406,51 @@ div#contact-way span
 	top: 15px;
 	left: 10px;
 	color: #BBB2B3;
+}
+
+div#ahead
+{
+	margin-top: 32px;
+}
+
+div#ahead h3
+{
+	color: #fff;
+	background-color: #B33C1C;
+	text-align: center;
+	line-height: 50px;
+	margin: 0;
+}
+
+div#ahead ul.categoryUl
+{
+	padding-left: 0;
+}
+
+div#ahead li
+{
+	margin: 0;
+}
+
+div#ahead a
+{
+	width: 290px;
+	height: 20px;
+	display: block;
+	text-decoration: none;
+	padding-left: 20px;
+	color: #646464;
+}
+
+div#ahead a:visited
+{
+	color: #B33C1C;
+}
+
+div#ahead a:hover
+{
+	background-color: #242424;
+	color: #BDBEC0;
 }
 
 div#secondary

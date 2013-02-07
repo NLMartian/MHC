@@ -22,7 +22,7 @@
 				<ul class="cornerUl">
 					<?php 
 						global $post;
-						$args = array('numberposts' => 3, 'category' => 3, 'order' => 'DESC', 'orderby' => 'post_date');
+						$args = array('numberposts' => 3, 'category' => 5, 'order' => 'DESC', 'orderby' => 'post_date');
 						$myposts = get_posts($args);
 
 						foreach($myposts as $post) :
@@ -41,7 +41,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
 						global $news;
-						$args = array('category' => 4, 'numberposts' => 1);
+						$args = array('category' => 6, 'numberposts' => 1);
 						$mynews = get_posts($args);
 
 						foreach($mynews as $news) :
