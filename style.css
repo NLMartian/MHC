@@ -402,6 +402,30 @@ div#contact-way span
 	color: #BBB2B3;
 }
 
+div#ahead
+{
+	margin-top: 32px;
+}
+
+div#ahead h3
+{
+	color: #fff;
+	background-color: #B33C1C;
+	text-align: center;
+	line-height: 50px;
+	margin: 0;
+}
+
+div#ahead li
+{
+	margin: 0;
+}
+
+div#ahead a
+{
+	text-decoration: none;
+}
+
 div#secondary
 {
 	margin-top: 20px;

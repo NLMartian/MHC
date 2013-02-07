@@ -47,7 +47,17 @@
 					<li class="<?php echo($home_menu_class); ?>">
 						<a title="<?php _e('Home', 'default'); ?>" href="<?php echo get_settings('home'); ?>/"><?php _e('Home', 'default'); ?></a>
 					</li>
-					<?php wp_list_categories('depth=2&title_li=0&orderby=ID&show_count=0'); ?>
+					<?php 
+						$args = array(
+							'depth' => 2,
+							'orderby' => 'ID',
+							'show_count' => 0,
+							'order' => 'ASC',
+							'hide_empty' => 0,
+							'title_li' => '',
+							'number' => 4
+						);
+						wp_list_categories($args); ?>
 				</ul>
 			</div><!--	#nav-menu -->
 		</div>

@@ -20,9 +20,9 @@
 								foreach($categories as $category) {
 									$inCount++;
 								?>
-								<div class="insurance<?php //echo inCount; ?>">
+								<div class="insurance">
 									<a href="<?php echo get_category_link( $category->term_id ); ?>">
-										<img src="<?php bloginfo('template_directory'); ?>/images/insurance-<?php echo $category->category_nicename ; ?>.png"  />
+										nihao
 									</a>
 								</div>
 								<?php if(($inCount % 4) == 0) {?>

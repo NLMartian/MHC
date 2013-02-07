@@ -1,9 +1,24 @@
 	<div id="ahead" class="sidebar">
-		
+		<ul class="xoxo">
+			<li id="companies">
+				<h3 class="cornerTitle"><?php _e('Insurance companies', 'sandbox')?></h3>
+				<ul class="cornerUl" style="padding-bottom: 25px;">
+					<?php 
+						$args = array(
+							'orderby' => 'id',
+							'order' => 'DESC',
+							'child_of' => 4,
+							'hide_empty' => 0,
+							'title_li' => ''
+						);
+						wp_list_categories($args) ?>
+				</ul>
+			</li>
+		</ul>
 	</div>
 
-	<div id="primary" class="sidebar">
-		<h3><?php _e('Contact us', 'sandbox')?></h3>
+	<div id="primary" class="sidebar" style="margin-top: 24px;">
+		<h3 style="margin-top: 0;"><?php _e('Contact us', 'sandbox')?></h3>
 		<div id="contact-img">
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>
@@ -13,7 +28,7 @@
 			<span id="contact-email"><a href="/" title="<?php _e('Email', 'sandbox')?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
-			<span><?php _e("<!--:zh-->在线联系我们<!--:--><!--:en-->Contact us online<!--:-->"); ?></span>
+			<span><?php _e("<!--:zh-->在线联系我们< !--:--><!--:en-->Contact us online<!--:-->"); ?></span>
 			<img src="<?php bloginfo('template_directory');?>/images/contact-skype.png" alt="Skype" title="Skype" style="padding-left: 15px;"/>
 			<img src="<?php bloginfo('template_directory');?>/images/contact-msn.png" alt="MSN" title="MSN" style="margin-left: -8px;"/>
 		</div>
