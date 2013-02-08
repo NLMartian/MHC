@@ -49,14 +49,14 @@
 					</li>
 					<?php 
 						$args = array(
-							'depth' => 2,
+							'depth' => 1,
 							'orderby' => 'ID',
-							'show_count' => 0,
 							'order' => 'ASC',
-							'hide_empty' => 1,
+							'hide_empty' => 0,
 							'title_li' => '',
 							'number' => 4,
-							'exclude_tree' => 5,6,7
+							'exclude' => '5,6,7',
+							'include' => ''
 						);
 						wp_list_categories($args); ?>
 				</ul>
