@@ -580,33 +580,34 @@ div#title{
 
 .menubar {
 	float:right;
-	margin:50px 38px 10px 0;
-	margin:58px 38px 10px 0\9;
+	margin:50px 55px 10px 0;
+	margin:58px 55px 10px 0\9;
 }
 
 .menubar ul.menus li {
 	float:left; /* 靠左浮动 */
 	list-style:none; /* 清空列表风格 */
-	margin-right:30px; /* 右侧的间隔 */
+	margin:0 10px 0 10px; /* 右侧的间隔 */
 	height:60px;
 	width:100px;
 	overflow:visible;
+	padding:6px 5px 27px 5px;
 }
 
 .menubar ul.menus li.cat-item-2{
-	margin-right:52px; /* 右侧的间隔 */
+	padding:6px 5px 27px 5px;
 }
 
 .menubar ul.menus li.cat-item-3{
-	margin-right:40px; /* 右侧的间隔 */
+	padding:6px 5px 27px 5px;
 }
 
 .menubar ul.menus li.cat-item-4{
-	margin-right:25px; /* 右侧的间隔 */
+	padding:6px 5px 27px 5px;
 }
 
-.menubar ul.menus li.cat-item-5{
-	margin-right:24px; /* 右侧的间隔 */
+.menubar ul.menus li.cat-item-8{
+	padding:6px 5px 27px 5px;
 }
 /*首页的链接*/
 .menubar ul.menus li.cat-item-1 a{
@@ -616,7 +617,7 @@ div#title{
 .menubar ul.menus li a {
 	padding:6px 5px 27px 5px; /* 内边距 */
 	/*IE上的内边距 */
-	padding:6px 0 27px 0\9;
+	padding:6px 10px 27px 10px\9;
 	display:block; /* 显示为块 */
 	color:#FFF; /* 文字颜色 */
 	background:transparent; /* 背景颜色 */
@@ -625,7 +626,7 @@ div#title{
 	font-family:arial,"Microsoft YaHei",微软雅黑;
 	font-size:16px;
 	/*height:56px;*/
-	/*width:100px;*/
+	width:auto;
 }
 /* 当前菜单位置 */
 .menubar ul.menus ul {
@@ -642,11 +643,11 @@ div#title{
 }
 /* 二级菜单 */
 .menubar ul.children {
+	margin:0;
 	position:absoult;
 	top:127px;	
-	display:none; /* 初始化页面时不显示出来 */
+	/*display:none; /* 初始化页面时不显示出来 */
 	padding:0 1px 0 1px;
-	margin:0;
 	background:transparent;
 	width:147px;
 }

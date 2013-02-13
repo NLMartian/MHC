@@ -4,8 +4,8 @@
 * cat3    保险信息
 * cat4    保险商
 * cat5    健康信息
-* cat6   （可能不用分类）insurance news
-* cat7   （可能不用分类）首页文章
+* cat6    insurance news
+* cat7    首页文章
 * cat8	  联系我们（单独写category.php布局）
 ##联系信息作为一个page
 

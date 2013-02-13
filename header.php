@@ -49,12 +49,12 @@
 					</li>
 					<?php 
 						$args = array(
-							'depth' => 1,
+							'depth' => 2,
 							'orderby' => 'ID',
 							'order' => 'ASC',
-							'hide_empty' => 0,
+							'hide_empty' => 1,
 							'title_li' => '',
-							'number' => 4,
+							/*'number' => 5,*/
 							'exclude' => '5,6,7',
 							'include' => ''
 						);
