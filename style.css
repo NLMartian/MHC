@@ -643,13 +643,13 @@ div#title{
 }
 /* 二级菜单 */
 .menubar ul.children {
-	margin:0;
 	position:absoult;
 	top:127px;	
 	/*display:none; /* 初始化页面时不显示出来 */
 	padding:0 1px 0 1px;
 	background:transparent;
 	width:147px;
+	margin:0 0 0 -12px;
 }
 /* 二级菜单的菜单项 */
 .menubar ul.children li {
