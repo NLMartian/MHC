@@ -22,6 +22,6 @@
 	
 	<!--ÊúÖ±·Ö¸îÏß-->
 	<div id="vertical-separator"></div>
-	<?php get_sidebar('category') ?>
+	<?php get_sidebar() ?>
 </div>
 <?php get_footer() ?>
