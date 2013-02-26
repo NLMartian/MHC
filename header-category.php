@@ -53,9 +53,10 @@
 							'orderby' => 'ID',
 							'show_count' => 0,
 							'order' => 'ASC',
-							'hide_empty' => 0,
+							'hide_empty' => 1,
 							'title_li' => '',
-							'number' => 4
+							'exclude' => '5,6,7',
+							//'number' => 4
 						);
 						wp_list_categories($args); ?>
 				</ul>
