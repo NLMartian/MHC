@@ -6,9 +6,10 @@
 					<?php 
 						$args = array(
 							'orderby' => 'id',
-							'order' => 'DESC',
-							'child_of' => 4,
-							'hide_empty' => 0,
+							'order' => 'ASC',
+							//'child_of' => 4,
+							'child_of' => get_current_cat_id(),
+							'hide_empty' => 1,
 							'title_li' => ''
 						);
 						wp_list_categories($args) ?>

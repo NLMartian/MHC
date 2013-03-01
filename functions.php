@@ -9,6 +9,21 @@ SANDBOX is distributed in the hope that it will be useful, but WITHOUT ANY WARRA
 You should have received a copy of the GNU General Public License along with SANDBOX. If not, see http://www.gnu.org/licenses/.
 */
 
+/* START---Our custom function---START */
+function get_current_cat_id() {
+	$cat_id = 0;
+
+	if (is_category()) {
+		global $wp_query;
+		$cat_id = $wp_query->get_queried_object_id();
+	}
+
+	return $cat_id;
+
+}
+
+/* END---Our custom function---END */
+
 // Produces a list of pages in the header without whitespace
 function sandbox_globalnav() {
 	if ( $menu = str_replace( array( "\r", "\n", "\t" ), '', wp_list_pages('title_li=&sort_column=menu_order&echo=0') ) )
