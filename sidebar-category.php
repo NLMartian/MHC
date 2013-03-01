@@ -6,7 +6,7 @@
 					<?php _e(get_current_cat_id(), 'sandbox')?>
 				</h3>
 				<ul class="cornerUl categoryUl">
-					<?php 
+					<?php
 						$args = array(
 							'orderby' => 'id',
 							'order' => 'ASC',
