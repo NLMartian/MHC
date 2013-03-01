@@ -11,7 +11,7 @@ You should have received a copy of the GNU General Public License along with SAN
 
 /* START---Our custom function---START */
 function get_current_cat_id() {
-	$cat_id = 0;
+	/*$cat_id = 0;
 
 	if (is_category()) {
 		global $wp_query;
@@ -19,6 +19,9 @@ function get_current_cat_id() {
 	}
 
 	return $cat_id;
+	*/
+	$current_category = single_cat_title('', false);//获得当前分类目录名称
+    return get_cat_ID($current_category);
 
 }
 

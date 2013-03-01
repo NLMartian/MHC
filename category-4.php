@@ -8,7 +8,7 @@
 	
 	//获取当前目录第一子目录的id 
 	$args = array(
-		'child_of' => get_current_cat_id(),
+		'child_of' => 4,
 		'order' => 'ASC',
 		'orderby' => 'id');
 	
@@ -38,7 +38,7 @@
 	
 	<!--竖直分割线-->
 	<div id="vertical-separator"></div>
-	<?php get_sidebar('category') ?>
+	<?php get_sidebar('category4') ?>
 </div>
 <?php get_footer() ?>
 

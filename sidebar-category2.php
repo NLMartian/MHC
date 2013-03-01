@@ -2,8 +2,7 @@
 		<ul class="xoxo">
 			<li id="companies">
 				<h3 class="cornerTitle">
-					<?php _e(get_cat_name(get_current_cat_id()), 'sandbox')?>
-					<?php _e(get_current_cat_id(), 'sandbox')?>
+					<?php _e(get_cat_name(2), 'sandbox')?>
 				</h3>
 				<ul class="cornerUl categoryUl">
 					<?php 
@@ -11,7 +10,6 @@
 							'orderby' => 'id',
 							'order' => 'ASC',
 							'child_of' => 2,
-							//'child_of' => get_current_cat_id(),
 							'hide_empty' => 1,
 							'title_li' => ''
 						);
