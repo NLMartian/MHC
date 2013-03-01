@@ -1,7 +1,9 @@
 	<div id="ahead" class="sidebar">
 		<ul class="xoxo">
 			<li id="companies">
-				<h3 class="cornerTitle"><?php _e('Insurance companies', 'sandbox')?></h3>
+				<h3 class="cornerTitle">
+					<?php _e(get_cat_name(get_current_cat_id()), 'sandbox')?>
+				</h3>
 				<ul class="cornerUl categoryUl">
 					<?php 
 						$args = array(
