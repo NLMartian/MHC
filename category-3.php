@@ -8,7 +8,7 @@
 	
 	//获取当前目录第一子目录的id 
 	$args = array(
-		'child_of' => 3
+		'child_of' => 3,
 		'order' => 'ASC',
 		'orderby' => 'id');
 	
