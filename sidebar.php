@@ -1,5 +1,5 @@
 	<div id="primary" class="sidebar">
-		<h3><?php _e('Contact us', 'sandbox')?></h3>
+		<h3><?php _e("<!--:zh-->联系我们<!--:--><!--:en-->Contact us<!--:-->"); ?></h3>
 		<div id="contact-img">
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>
@@ -18,7 +18,7 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="pages">
-				<h3 class="cornerTitle"><?php _e( 'Health information', 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(5), 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
 					<?php 
 						global $post;
@@ -36,7 +36,7 @@
 			</li>
 
 			<li id="categories">
-				<h3 class="cornerTitle"><?php _e( 'Insurance news', 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(6), 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
