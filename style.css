@@ -589,8 +589,8 @@ div#title{
 
 .menubar {
 	float:right;
-	margin:50px 55px 10px 0;
-	margin:58px 55px 10px 0\9;
+	margin:50px 48px 10px 0;
+	margin:58px 48px 10px 0\9;
 }
 
 .menubar ul.menus li {
@@ -603,12 +603,17 @@ div#title{
 	padding:6px 5px 27px 5px;
 }
 
+.menubar ul.menus li.cat-item-1{
+	margin-right: 9px;
+}
 .menubar ul.menus li.cat-item-2{
 	padding:6px 5px 27px 5px;
+	margin-right: 33px;
 }
 
 .menubar ul.menus li.cat-item-3{
 	padding:6px 5px 27px 5px;
+	margin-right: 19px;
 }
 
 .menubar ul.menus li.cat-item-4{
@@ -658,8 +663,16 @@ div#title{
 	padding:0 1px 0 1px;
 	background:transparent;
 	width:147px;
-	margin:0 0 0 -12px;
+	margin:0 0 0 -19px;
 }
+
+.menubar ul.menus li.cat-item-2 ul.children {
+	margin:0 0 0 -23px;
+}
+.menubar ul.menus li.cat-item-3 ul.children {
+	margin:0 0 0 -24px;
+}
+
 /* ?????˵??Ĳ˵??? */
 .menubar ul.children li {
 	float:none; /* ??ֱ???? */
