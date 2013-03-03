@@ -61,7 +61,7 @@ div#vertical-separator{
 }
 
 /* ???չ?˾ START*/
-/* ??ɫ???ⲿ??*/
+/* ??ɫ???�??*/
 div#companies-board-title{
 	background:#c44c2c;
 	width:240px;
@@ -173,6 +173,15 @@ div.insurance a img:hover{border: none;}
 	color: #DE5441;
 	cursor: pointer;
  }
+
+div.post a.more-link
+{
+	position: relative;
+	float: right;
+	right: 10px;
+	bottom: 10px;
+	font-size: 14px;
+}
 
 div.post p
 {
@@ -475,7 +484,6 @@ div#secondary a.title
 div#secondary a.more
 {
 	color: #787878;
-	line-height: 48px;
 	text-decoration: none;
 	margin-left: 200px;
 }
@@ -499,8 +507,9 @@ div.sidebar li form
 
 div.sidebar ul ul 
 {
-	padding: 0 0 0 1em;
+	padding: 0 0 1em 1em;
 	background-color: #F3F3F3;
+
 }
 
 

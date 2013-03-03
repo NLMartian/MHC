@@ -19,7 +19,7 @@
 		<ul class="xoxo">
 			<li id="pages">
 				<h3 class="cornerTitle"><?php _e(get_cat_name(5), 'sandbox' ) ?></h3>
-				<ul class="cornerUl">
+				<ul class="cornerUl" style="padding-bottom: 0;">
 					<?php 
 						global $post;
 						$args = array('numberposts' => 3, 'category' => 5, 'order' => 'DESC', 'orderby' => 'post_date');
@@ -31,7 +31,7 @@
 					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
 					
-					<a href="<?php echo get_category_link(5); ?>" title="View all posts under Health information" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<a href="<?php echo get_category_link(5); ?>" title="View all posts under Health information" class="more" style="line-height: 48px;"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 
@@ -44,11 +44,11 @@
 						$args = array('category' => 6, 'numberposts' => 1);
 						$mynews = get_posts($args);
 
-						foreach($mynews as $news) :
-						setup_postdata($news);
+						setup_postdata($mynews[0]);
+						global $more;
+						$more = 0;
+						the_content('');
 					?>
-					<p><?php the_content(); ?></p>
-					<?php endforeach; ?>
 					
 					<a href="<?php echo get_category_link(6);?>" title="View all posts under Insurance news" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
