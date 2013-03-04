@@ -1,5 +1,17 @@
 	<div id="primary" class="sidebar">
-		<h3><?php _e("<!--:zh-->联系我们<!--:--><!--:en-->Contact us<!--:-->"); ?></h3>
+
+		<?php 
+			$args2 = array(
+						'meta_key' => 'contractus',
+						'meta_value' => 'yes'
+					); 
+			$pages = get_pages($args2);
+			$contract_page_url = "";
+			if(count($pages) != 0) {
+				$contract_page_url = get_page_link( $pages[0]->ID );
+			}
+		?>
+		<h3><a href="<?php echo $contract_page_url; ?>"><?php _e("<!--:zh-->联系我们<!--:--><!--:en-->Contact us<!--:-->"); ?></a></h3>
 		<div id="contact-img">
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>

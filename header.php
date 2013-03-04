@@ -55,10 +55,32 @@
 							'hide_empty' => 1,
 							'title_li' => '',
 							/*'number' => 5,*/
-							'exclude' => '5,6,7',
+							'exclude' => '5,6,7,8',
 							'include' => ''
 						);
 						wp_list_categories($args); ?>
+					<?php $args2 = array(
+						'meta_key' => 'contractus',
+						'meta_value' => 'yes'
+					); 
+					$pages = get_pages($args2);
+					$page_name = "";
+					$contract_page_url = "";
+					if(count($pages) != 0) {
+						$page_name = $pages[0]->post_title;
+						$contract_page_url = get_page_link( $pages[0]->ID );
+
+						if(is_page($pages[0]->ID)) {
+							$page_contract_class = 'current-cat cat-item-8';
+						} else {
+							$page_contract_class = 'cat-item cat-item-8';
+						}
+					}
+					?>
+					<li class="<?php echo $page_contract_class; ?>">
+						<a title="<?php _e($page_name, 'default'); ?>" href="<?php echo $contract_page_url; ?>/"> <?php _e($page_name, 'default'); ?></a>
+					</li>
+
 				</ul>
 			</div><!--	#nav-menu -->
 		</div>

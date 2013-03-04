@@ -10,6 +10,19 @@ You should have received a copy of the GNU General Public License along with SAN
 */
 
 /* START---Our custom function---START */
+
+function get_contract_url() {
+	$args2 = array(
+						'meta_key' => 'contractus',
+						'meta_value' => 'yes'
+					); 
+			$pages = get_pages($args2);
+			$contract_page_url = "";
+			if(count($pages) != 0) {
+				$contract_page_url = get_page_link( $pages[0]->ID );
+			}
+	return $contract_page_url;
+}
 function get_current_cat_id() {
 	/*$cat_id = 0;
 
