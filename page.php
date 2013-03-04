@@ -1,12 +1,13 @@
 <?php get_header() ?>
 
+<div id="main">
 	<div id="container">
 		<div id="content">
 
 <?php the_post() ?>
 
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
-				<h2 class="entry-title"><?php the_title() ?></h2>
+				<h2 class="entry-title"><?php _e('<!--:zh-->留言板<!--:--><!--:en-->MessageBoard<!--:-->'); ?></h2>
 				<div class="entry-content">
 <?php the_content() ?>
 
@@ -23,4 +24,5 @@
 	</div><!-- #container -->
 
 <?php get_sidebar() ?>
+</div>
 <?php get_footer() ?>
