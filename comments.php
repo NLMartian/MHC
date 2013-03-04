@@ -79,7 +79,7 @@ foreach ( $comments as $comment )
 <?php $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-) ?>
 
 				<div id="respond">
-					<h3><?php _e( 'Post a Comment', 'sandbox' ) ?></h3>
+					<h3><?php _e('<!--:zh-->发表留言<!--:--><!--:en-->Post a Comment<!--:-->'); ?></h3>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 					<p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'sandbox'),
@@ -98,16 +98,16 @@ foreach ( $comments as $comment )
 
 <?php else : ?>
 
-							<p id="comment-notes"><?php _e( 'Your email is <em>never</em> shared.', 'sandbox' ) ?> <?php if ($req) _e( 'Required fields are marked <span class="required">*</span>', 'sandbox' ) ?></p>
+							<p id="comment-notes"><?php if ($req) _e('<!--:zh-->带*的为必填选项<!--:--><!--:en-->Required fields are marked <span class="required">*</span><!--:en-->'); ?></p>
 
 							<div class="form-label"><label for="author"><?php _e("<!--:zh-->姓名<!--:--><!--:en-->Name<!--:-->") ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'sandbox' ) ?></div>
-							<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" /></div>
+							<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="" size="30" maxlength="50" tabindex="3" /></div>
 
 							<div class="form-label"><label for="email"><?php _e("<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->") ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'sandbox' ) ?></div>
-							<div class="form-input"><input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" /></div>
+							<div class="form-input"><input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="" size="30" maxlength="50" tabindex="4" /></div>
 
 							<div class="form-label"><label for="url"><?php _e("<!--:zh-->手机<!--:--><!--:en-->Mobile<!--:-->") ?></label></div>
-							<div class="form-input"><input id="url" name="url" class="text" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" /></div>
+							<div class="form-input"><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" /></div>
 
 <?php endif // REFERENCE: * if ( $user_ID ) ?>
 
