@@ -7,7 +7,8 @@
 <?php while ( have_posts() ) : the_post() ?>
 
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
-				<h2 class="entry-title"><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'sandbox'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a>
+				<h2 class="entry-title" style="color: #DE5441;">
+					<?php the_title() ?>
 				</h2>
 				<div class="entry-content">
 				<?php 
