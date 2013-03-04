@@ -6,7 +6,7 @@
 		<div id="contact-info">
 			<span id="contact-addr"><?php _e("<!--:zh-->上海<!--:--><!--:en-->Shanghai<!--:-->"); ?><span><br/>
 			<span id="contact-num">+86 15901980381</span><br/>
-			<span id="contact-email"><a href="/" title="<?php _e('Email', 'sandbox')?>"><?php bloginfo('admin_email')?></a></span> <br/>
+			<span id="contact-email"><a href="/" title="<?php _e('<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->'); ?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
 			<span><?php _e("<!--:zh-->在线联系我们<!--:--><!--:en-->Contact us online<!--:-->"); ?></span>
@@ -31,7 +31,8 @@
 					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
 					
-					<a href="<?php echo get_category_link(5); ?>" title="View all posts under Health information" class="more" style="line-height: 48px;"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<a href="<?php echo get_category_link(5); ?>" title="<?php _e('<!--:zh-->浏览健康信息下的所有文章<!--:--><!--:en-->View all posts under Health information<!--:-->'); ?>" class="more" style="line-height: 48px;">
+					<?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 
@@ -50,7 +51,8 @@
 						the_content('');
 					?>
 					
-					<a href="<?php echo get_category_link(6);?>" title="View all posts under Insurance news" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<a href="<?php echo get_category_link(6);?>" title="<?php _e('<!--:zh-->浏览保险新闻下的所有文章<!--:--><!--:en-->View all posts under Insurance news<!--:-->'); ?>" class="more">
+					<?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>

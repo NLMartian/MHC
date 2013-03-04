@@ -57,7 +57,10 @@
 				<h2 class="entry-title" style="padding-top: 10px;"><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'sandbox'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a>
 				</h2>
 				<div class="entry-content">
-				<?php the_content( __( '<!--:zh-->更多<!--:--><!--:en-->More<!--:--> <span class="meta-nav">&raquo;</span>', 'sandbox' ) ); ?>
+				<?php the_content('<div><!--:zh-->更多>><!--:--><!--:en-->More>><!--:--></div>', FALSE, ''); ?>
+				<!--
+				<a href="<?php the_permalink() ?>" class="more-link"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+				-->
 				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
 				</div>
 			</div><!-- .post -->
