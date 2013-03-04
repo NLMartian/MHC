@@ -496,6 +496,11 @@ div#ahead li
 	margin: 0;
 }
 
+div#ahead li.current-cat a
+{
+	color: #B33C1C;
+}
+
 div#ahead a
 {
 	width: 290px;
@@ -506,10 +511,10 @@ div#ahead a
 	color: #646464;
 }
 
-div#ahead a:visited
+/*div#ahead a:visited
 {
 	color: #B33C1C;
-}
+}*/
 
 div#ahead a:hover
 {
