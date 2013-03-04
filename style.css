@@ -197,12 +197,18 @@ h3#message-board-text {
 	color: #DE5441;
 	font-size: 1.5em;
 	font-weight: bold;
-	
 }
 
 div#respond {
 	margin: 10px 10px 10px 20px;
 	font-family: "ArialNarrow";
+}
+
+div#respond input#submit {
+	color: #B23C1B;
+	line-height: 33px;
+	padding: 10px;
+	margin-bottom: 5px;
 }
 
  /*???????? START*/
