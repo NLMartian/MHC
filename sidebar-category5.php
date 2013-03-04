@@ -26,11 +26,10 @@
 						$args = array('category' => 6, 'numberposts' => 1, 'order' => 'DESC', 'orderby' => 'post_date');
 						$mynews = get_posts($args);
 
-						foreach($mynews as $news) :
-						setup_postdata($news);
+						setup_postdata($mynews[0]);
+						the_content('');
 					?>
-					<p><?php the_content(); ?></p>
-					<?php endforeach; ?>
+		
 					<a href="<?php echo get_category_link(6);?>" title="View all posts under Insurance news" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
