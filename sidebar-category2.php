@@ -20,7 +20,7 @@
 	</div>
 
 	<div id="primary" class="sidebar" style="margin-top: 24px;">
-		<h3 style="margin-top: 0;"><?php _e('Contact us', 'sandbox')?></h3>
+		<h3 style="margin-top: 0;"><a href="<?php echo get_contract_url(); ?>"><?php _e("<!--:zh-->联系我们<!--:--><!--:en-->Contact us<!--:-->"); ?></a></h3>
 		<div id="contact-img">
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>

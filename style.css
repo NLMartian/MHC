@@ -423,6 +423,10 @@ div#primary h3
 	padding-left: 20px;
 	margin-bottom: 5px;
 }
+div#primary h3 a:link
+{
+	text-decoration:none;
+}
 
 div#primary img
 {

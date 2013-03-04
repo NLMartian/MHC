@@ -6,7 +6,7 @@
 * cat5    健康信息
 * cat6    insurance news
 * cat7    首页文章
-* page	  联系我们（自定义字段 key=contractus value=yes）
+* page	  联系我们（ 自定义字段 key=contractus value=yes; key=comments value=<?php comments_template(); ?>  ）
 ##联系信息作为一个page
 
 ##导航菜单主要有以下五个选项：
