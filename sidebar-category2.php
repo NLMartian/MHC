@@ -50,7 +50,11 @@
 						foreach($mynews as $news) :
 						setup_postdata($news);
 					?>
-					<p><?php the_content(''); ?></p>
+					<p><?php
+						global $more;
+						$more = 0;
+						the_content(''); ?>
+					</p>
 					<?php endforeach; ?>
 					<a href="<?php echo get_category_link(6);?>" title="<?php _e('<!--:zh-->浏览保险新闻下的所有文章<!--:--><!--:en-->View all posts under Insurance news<!--:-->'); ?>" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
