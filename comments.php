@@ -79,7 +79,7 @@ foreach ( $comments as $comment )
 <?php $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-) ?>
 
 				<div id="respond">
-					<h3><?php _e('<!--:zh-->发表留言<!--:--><!--:en-->Post a Comment<!--:-->'); ?></h3>
+					<h3 id="message-board-text"><?php _e('<!--:zh-->请将您的联系方式留下<!--:--><!--:en-->Please leave you contact information<!--:-->'); ?></h3>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 					<p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'sandbox'),
