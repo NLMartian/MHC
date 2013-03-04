@@ -88,7 +88,8 @@ foreach ( $comments as $comment )
 <?php else : ?>
 					<div class="formcontainer">	
 						<form id="commentform" action="<?php bloginfo('wpurl') ?>/wp-comments-post.php" method="post">
-
+							<!--评论跳转到感谢页面-->
+							<input name="redirect_to" type="hidden" value=<?php bloginfo('wpurl'); ?>"?page_id=2" />
 <?php if ( $user_ID ) : ?>
 							<p id="login"><?php printf( __( '<span class="loggedin">Logged in as <a href="%1$s" title="Logged in as %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Log out?</a></span>', 'sandbox' ),
 								get_bloginfo('wpurl') . '/wp-admin/profile.php',
