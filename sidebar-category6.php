@@ -19,7 +19,7 @@
 		<ul class="xoxo">
 			<li id="categories">
 				<h3 class="cornerTitle"><?php _e("<!--:zh-->健康信息<!--:--><!--:en-->Health Information<!--:-->"); ?></h3>
-				<ul class="cornerUl">
+				<ul class="cornerUl" style="padding-bottom: 0;">
 					<?php 
 						global $post;
 						$args = array('numberposts' => 3, 'category' => 5, 'order' => 'DESC', 'orderby' => 'post_date');
@@ -31,7 +31,7 @@
 					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
 					
-					<a href="<?php echo get_category_link(5); ?>" title="View all posts under Health information" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
+					<a href="<?php echo get_category_link(5); ?>" title="View all posts under Health information" class="more" style="line-height: 48px;"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>
