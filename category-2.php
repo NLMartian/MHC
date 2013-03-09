@@ -1,4 +1,4 @@
-<?php get_header('category') ?>
+<?php get_header('') ?>
 
 <div id="main">
 	<div id="container">
