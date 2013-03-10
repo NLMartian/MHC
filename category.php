@@ -14,7 +14,7 @@
 				<?php 
 					global $more;
 					$more = 1;
-					the_content(''); 
+					the_content('');
 				?>
 				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
 				</div>
@@ -27,6 +27,20 @@
 	
 	<!--ÊúÖ±·Ö¸îÏß-->
 	<div id="vertical-separator"></div>
-	<?php get_sidebar('category4') ?>
+	<?php
+		$category = get_the_category();
+		$parentID = $category[0]->parent;
+		if($parentID == 2)
+		{
+			get_sidebar('category2');
+		}else if($parentID == 3)
+		{
+			get_sidebar('category3');
+		}else
+		{
+			get_sidebar('category4');
+		}
+		//get_sidebar($cat);
+	?>
 </div>
 <?php get_footer() ?>

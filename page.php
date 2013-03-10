@@ -32,7 +32,9 @@
 			<?php } ?>
 		</div><!-- #content -->
 	</div><!-- #container -->
-
+	
+	<!--竖直分割线-->
+	<div id="vertical-separator"></div>
 <?php get_sidebar() ?>
 </div>
 <?php get_footer() ?>
