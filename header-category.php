@@ -35,7 +35,15 @@
 				</div>
 			</div>
 			
-			<div class="menubar">
+			<div class="menubar" 
+			<?php 
+				global $q_config;
+				if ($q_config['language'] == 'en'){
+					echo 'style="margin:47px 48px 10px 0; margin:55px 48px 10px 0\9;"';
+				}else {
+					echo 'style="margin:49px 48px 10px 0; margin:57px 48px 10px 0\9;"';
+				} 
+				?> >
 				<ul class="menus" id="menus">
 					<?php
 						if (is_home()) {
@@ -45,7 +53,7 @@
 						}
 					?>
 					<li class="<?php echo($home_menu_class); ?>">
-						<a title="<?php _e('Home', 'default'); ?>" href="<?php echo get_settings('home'); ?>/"><?php _e('Home', 'default'); ?></a>
+						<a title="<?php _e('Home', 'default'); ?>" href="<?php echo get_settings('home').'/?lang='.$q_config['language']; ?>"><?php _e('Home', 'default'); ?></a>
 					</li>
 					<?php 
 						$args = array(
