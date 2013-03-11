@@ -94,7 +94,7 @@
 		</div>
 		<div style="clear:both;"></div>
 
-		<div id="language-setting">
+		<div id="language-setting" style="margin-top: 0;">
 			<select id="language" onchange="changeLanguage(this.value)"?>">
 				<?php 
 					global $q_config;

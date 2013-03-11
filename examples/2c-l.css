@@ -33,12 +33,12 @@ div#container
 {	
 	float: right;
 	width:	100%;
-	margin: 0 0 0 -320px;
+	margin: 0 0 0 -290px;
 }
 
 div#content 
 {
-	margin: 0 0 0 320px;
+	margin: 0 0 0 290px;
 
 }
 
@@ -46,7 +46,7 @@ div.sidebar
 {
 	float: left;
 	overflow:	hidden;
-	width:	290px;
+	width:	260px;
 }
 
 div#secondary 

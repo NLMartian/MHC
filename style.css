@@ -549,7 +549,7 @@ div#secondary a.more
 {
 	color: #787878;
 	text-decoration: none;
-	margin-left: 200px;
+	margin-left: 168px;
 }
 
 div#secondary p
@@ -582,6 +582,7 @@ div.sidebar ul ul li
 	list-style: none;
 	margin: 0;
 	padding-top: 15px;
+	overflow: hidden;
 }
 
 div.sidebar ul ul ul {
