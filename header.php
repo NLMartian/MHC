@@ -88,11 +88,12 @@
 
 		<div id="language-setting" style="margin-top: 0;">
 			<select id="language" onchange="changeLanguage(this.value)"?>">
+				<option value="1" selected="selected">Choose your language</option>
 				<?php 
 					global $q_config;
 					foreach(qtrans_getSortedLanguages() as $language) {
 				?>
-					<option value="<?php echo htmlspecialchars_decode(qtrans_convertURL($url, $language), ENT_NOQUOTES); ?>" <?php if($q_config['language'] == $language) echo 'selected="selected"'?>><?php echo $q_config['language_name'][$language]; ?></option>
+					<option value="<?php echo htmlspecialchars_decode(qtrans_convertURL($url, $language), ENT_NOQUOTES); ?>"><?php echo $q_config['language_name'][$language]; ?></option>
 				<?php 
 					
 					}

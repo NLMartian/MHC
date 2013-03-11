@@ -45,7 +45,7 @@ div#language-setting select
 	top: 30px;
 	right: 40px;
 	height:25px;
-	width:100px;
+	/*width:100px;*/
 	text-align:middle;
 	line-height:22px;
 }
@@ -75,16 +75,16 @@ div#companies-board-title{
 }
 div#companies-board-border{
 	background:#e37263;
-	width:778px;
+	width:798px;
 	height:290px;
 	padding:1.5px 2px 1.5px 2px;
 }
 div#companies-board-content{
 	background:#f0f0f0;
-	width:778px;
+	width:798px;
 	height:289px;
 	overflow:hidden;
-	width:778px \9;
+	width:798px \9;
 }
 div.insurance-row{
 	height:94px;
