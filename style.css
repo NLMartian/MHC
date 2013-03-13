@@ -776,3 +776,66 @@ div#title{
 	overflow:hidden;
 }
 /* ?????说? END */
+
+
+/*模拟select样式*/
+.select_box{
+	background: #fff;
+	position: relative;
+	float: right;
+	top: 60px;
+	right: 70px;
+	font-size: 12px;
+	line-height: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.open_select_box{
+	width:80px;
+	position:relative;
+	height:17px;
+	background: #fff;
+}
+#ensign{
+	background-repeat:none;
+	display:inline-block;
+	width:16px;height:11px;
+	position:absolute;
+	left:6px;
+	top:4px;
+	margin:0;
+}
+#open_select{
+	border:solid 1px #ccc;
+	float:left;
+	width:80px;
+	text-align:center;
+	height:18px;
+	line-height:18px;
+	position:relative;
+	cursor:pointer;
+	background:url(images/select_down_icon.jpg) no-repeat  68px center;
+}
+.select_list{
+	padding:0;
+	border:solid 1px #ccc;
+	float:left;
+	width:80px;
+	margin:0;
+	border-top:none;
+	display:none;
+	box-shadow:0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.select_list li{
+	text-align:left;
+	height:22px;
+	line-height:22px;
+	cursor:pointer;
+	width:100%;
+	list-style-type:none;
+	vertical-align:top;
+}
+.h_bg{background:#5C7AFF;}
+.currency_icon{background-repeat:none;display:inline-block;width:16px;height:11px;margin:0 5px;}
+/*模拟select样式*/
