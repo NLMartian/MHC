@@ -22,15 +22,11 @@ jQuery(document).ready(function($) {
 	/*获取选中的值*/
 	var $dss=jQuery(".currency_type");
 	$dss.click(function(){  
-			var $c_attr=jQuery(this).siblings().attr("class");//选择货币的国旗类
-			var $ensign=jQuery("#ensign");
-			$ensign.attr("class",$c_attr);//将选中的货币国旗赋给$ensign
-							  
 			var $txt=jQuery(this).text();//展开菜单中的列表文本值
-			var $hidden_txt=jQuery(".hidden_txt");
+			var $url=jQuery(this).next();
 			var $t1=jQuery("#open_select");//模拟文本框，接受选择的值
 			$t1.text($txt); 
-			$hidden_txt.val($txt);
+			changeLanguage($url.val());
 			jQuery(this).parents(".select_list").hide();         
 		});
 	//下拉列表滑过的背景
@@ -43,4 +39,5 @@ jQuery(document).ready(function($) {
 
 function changeLanguage(obj) {
 	document.location.href = obj;
+	console.log(obj);
 }

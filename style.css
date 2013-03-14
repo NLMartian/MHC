@@ -656,7 +656,7 @@ div#title{
 	float:right;
 	margin:50px 48px 10px 0;
 	margin:58px 48px 10px 0\9;
-}
+	}
 
 .menubar ul.menus li {
 	float:left; /* ???蟾《? */
@@ -729,6 +729,7 @@ div#title{
 	background:transparent;
 	width:147px;
 	margin:0 0 0 -19px;
+	z-index:20;
 }
 
 .menubar ul.menus li.cat-item-2 ul.children {
@@ -781,46 +782,39 @@ div#title{
 /*模拟select样式*/
 .select_box{
 	background: #fff;
+	float:right;
+	right:70px;
+	top:40px;
 	position: relative;
-	float: right;
-	top: 60px;
-	right: 70px;
 	font-size: 12px;
 	line-height: 22px;
 	font-family: Arial, Helvetica, sans-serif;
+	
 }
 
 .open_select_box{
-	width:80px;
+	width:125px;
 	position:relative;
-	height:17px;
+	height:18px;
 	background: #fff;
 }
-#ensign{
-	background-repeat:none;
-	display:inline-block;
-	width:16px;height:11px;
-	position:absolute;
-	left:6px;
-	top:4px;
-	margin:0;
-}
+
 #open_select{
 	border:solid 1px #ccc;
 	float:left;
-	width:80px;
+	width:125px;
 	text-align:center;
 	height:18px;
 	line-height:18px;
 	position:relative;
 	cursor:pointer;
-	background:url(images/select_down_icon.jpg) no-repeat  68px center;
+	background:url(images/select_down_icon.jpg) no-repeat  112px center;
 }
 .select_list{
 	padding:0;
-	border:solid 1px #ccc;
+	border:solid 0px #ccc;
 	float:left;
-	width:80px;
+	width:125px;
 	margin:0;
 	border-top:none;
 	display:none;
@@ -828,14 +822,22 @@ div#title{
 }
 
 .select_list li{
-	text-align:left;
-	height:22px;
-	line-height:22px;
+	text-align:center;
+	height:18px;
+	line-height:18px;
 	cursor:pointer;
 	width:100%;
 	list-style-type:none;
 	vertical-align:top;
 }
-.h_bg{background:#5C7AFF;}
-.currency_icon{background-repeat:none;display:inline-block;width:16px;height:11px;margin:0 5px;}
+.h_bg{
+	background:#5C7AFF;
+}
+.currency_icon{
+	background-repeat:none;
+	display:inline-block;
+	width:16px;
+	height:11px;
+	margin:0 5px;
+}
 /*模拟select样式*/

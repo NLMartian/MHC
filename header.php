@@ -116,7 +116,8 @@
 						global $q_config;
 						foreach(qtrans_getSortedLanguages() as $language) {
 					?>
-		           	<li><span class="currency_icon aud"></span><span class="currency_type"><?php echo $q_config['language_name'][$language]; ?></span></li>
+		           	<li class="currency_type"><?php echo $q_config['language_name'][$language]; ?></li>
+		           	<input type="hidden"  class="language_url" value="<?php echo htmlspecialchars_decode(qtrans_convertURL($url, $language), ENT_NOQUOTES); ?>"/>
 		           	<?php 
 						}
 					?>
