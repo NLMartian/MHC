@@ -589,6 +589,11 @@ div.sidebar ul ul ul {
 margin:0 0 0 0.5em;
 }
 
+div.sidebar ul ul img {
+	margin-left:-16px;
+	width:260px;
+}
+
 div.sidebar ul ul ul li {
 list-style:circle;
 }
