@@ -35,6 +35,16 @@ jQuery(document).ready(function($) {
 		},function(){
 			jQuery(this).removeClass("h_bg");        
 		});
+
+
+	//截取评论提交动作
+	jQuery('#commentform').submit(function() {
+		var when = jQuery('#when').val();
+		var where = jQuery('#where').val();
+		var what = jQuery('#comment').val();
+
+		jQuery('#comment').val('方便联系的时间：' + when + '  居住的国家：' + where + '  留言的内容：' + what);
+	});
 });
 
 function changeLanguage(obj) {
