@@ -310,6 +310,7 @@ form#commentform,form#commentform p#comment-notes{
 
 input#author,input#email,input#url,textarea#comment {
 padding:0.2em;
+
 }
 
 div.comments ol li {
@@ -633,7 +634,11 @@ div#footer-info{
 }
 
 input#author,input#email,input#url,div.navigation div {
-width:50%;
+width:190px;
+}
+
+select#where,select#when {
+	width:190px;
 }
 
 div.gallery *,div.sidebar div,div.sidebar ul {
