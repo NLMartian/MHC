@@ -3,6 +3,10 @@
 <head profile="http://gmpg.org/xfn/11">
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+
+	<!-- 导入bootstrap -->
+	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
 	
 	<!-- 导入jquery.js -->
@@ -39,9 +43,9 @@
 			<?php 
 				global $q_config;
 				if ($q_config['language'] == 'en'){
-					echo 'style="margin:47px 48px 10px 0; margin:55px 48px 10px 0\9;"';
+					echo 'style="margin:47px 48px 35px 0; margin:55px 48px 35px 0\9;"';
 				}else {
-					echo 'style="margin:49px 48px 10px 0; margin:57px 48px 10px 0\9;"';
+					echo 'style="margin:49px 48px 35px 0; margin:57px 48px 35px 0\9;"';
 				} 
 				?> >
 				<ul class="menus" id="menus">
@@ -109,9 +113,9 @@
 				
 			</select-->
 
-			<div class="select_box">
-		        <div class="open_select_box"><span class="usd" id="ensign"></span><span  id="open_select"><?php _e("<!--:zh-->选择语言<!--:--><!--:en-->select a language<!--:-->"); ?></span></div>
-		        <ul class="select_list">
+			<div class="select_box" style="font-size:12px;">
+		        <div class="open_select_box"><!--span class="usd" id="ensign"></span--><span  id="open_select"><?php _e("<!--:zh-->选择语言<!--:--><!--:en-->select a language<!--:-->"); ?></span></div>
+		        <ul class="select_list dropdown-menu">
 		        	<?php 
 						global $q_config;
 						foreach(qtrans_getSortedLanguages() as $language) {

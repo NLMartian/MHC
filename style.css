@@ -672,7 +672,7 @@ div#title{
 	float:left; /* ???蟾《? */
 	list-style:none; /* ?????斜????? */
 	margin:0 10px 0 10px; /* ?也??募??? */
-	height:60px;
+	height:50px;
 	width:100px;
 	overflow:visible;
 	padding:6px 5px 27px 5px;
@@ -704,9 +704,9 @@ div#title{
 }
 /* ?说??????? */
 .menubar ul.menus li a {
-	padding:6px 5px 27px 5px; /* ?诒呔? */
+	padding:20px 5px 27px 5px; /* ?诒呔? */
 	/*IE?系??诒呔? */
-	padding:6px 10px 27px 10px\9;
+	padding:20px 10px 27px 10px\9;
 	display:block; /* ??示为?? */
 	color:#FFF; /* ??????色 */
 	background:transparent; /* ??????色 */
@@ -723,7 +723,7 @@ div#title{
 }
 /* ??前?说??????? */
 .menubar ul.menus li.current-cat a {
-	background:url(images/menu-hover-bg.png) no-repeat; /* ????图片 */
+	background:url(images/menu-hover-bg.png) no-repeat bottom; /* ????图片 */
 }
 /* 选?胁说??????? */
 .menubar ul.menus li a:hover {
@@ -791,6 +791,7 @@ div#title{
 
 /*模拟select样式*/
 .select_box{
+	width:127px;
 	background: #fff;
 	float:right;
 	right:70px;
