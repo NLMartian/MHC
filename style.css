@@ -712,7 +712,7 @@ div#title{
 	background:transparent; /* ??????色 */
 	text-decoration:none; /* 没???潞??? */
 	text-align: center;
-	font-family:arial,"Microsoft YaHei",微???藕?;
+	font-family:arial,"Microsoft YaHei";
 	font-size:16px;
 	/*height:56px;*/
 	width:auto;
@@ -727,6 +727,24 @@ div#title{
 .menubar ul.menus li.current-cat a {
 	background:url(images/menu-hover-bg.png) no-repeat bottom; /* ????图片 */
 }
+
+.menubar ul.menus li.current-cat-parent a {
+	background:url(images/menu-hover-bg.png) no-repeat bottom; 
+}
+
+.menubar ul.menus li.current-cat-parent ul.children li a {
+	background:transparent;
+	width:147px; /* ??IE6 ??说十?趾???要 */
+	height:24px;
+	color:#5e5e5e;
+	padding:0;
+	margin:0;
+	line-height:24px;
+	font-size:14px;
+}
+
+
+
 /* 选?胁说??????? */
 .menubar ul.menus li a:hover {
 	/*background:url(images/menu-hover-bg.png) no-repeat; */
@@ -764,6 +782,14 @@ div#title{
 .menubar ul.menus li.current-cat ul.children li a {
 	background:transparent;
 }
+
+.menubar ul.menus li.current-cat ul.children li a:hover {
+	background:#292929;
+	width:147px; 
+	color:#FFF;
+}
+
+
 /* ?????说??牡?前?说??????? */
 .menubar ul.children li a {
 	background:transparent;
@@ -781,6 +807,13 @@ div#title{
 	width:147px; /* ?? IE6 ??说十?趾???要 */
 	color:#FFF;
 }
+
+.menubar ul.menus li.current-cat-parent ul.children li a:hover {
+	background:#292929;
+	width:147px; /* ?? IE6 ??说十?趾???要 */
+	color:#FFF;
+}
+
 .menubar ul.children li.submenubg-bottom{
 	background:url(images/submenu-bg-bottom.png) no-repeat;
 	background-position:top;

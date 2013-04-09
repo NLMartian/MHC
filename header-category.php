@@ -3,6 +3,9 @@
 <head profile="http://gmpg.org/xfn/11">
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+
+	<!-- 导入bootstrap -->
+	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
 	
 	<!-- 导入jquery.js -->
