@@ -180,14 +180,14 @@ div#message-board-title{
 div#message-board-border{
 	background:#e37263;
 	width:778px;
-	height:660px;
+	height:790px;
 	padding:1.5px 2px 1.5px 2px;
 	margin-bottom: -660px;
 }
 div#message-board-content{
 	background:#f0f0f0;
 	width:778px;
-	height:659px;
+	height:789px;
 	overflow:hidden;
 	width:778px \9;
 	margin-bottom: -659px;
@@ -633,11 +633,11 @@ div#footer-info{
 	text-decoration:none;
 }
 
-input#author,input#email,input#url,div.navigation div {
+input#author,input#email,input#url,div.navigation,input#age div {
 width:190px;
 }
 
-select#where,select#when {
+select#where,select#when,select#live,select#call {
 	width:190px;
 }
 

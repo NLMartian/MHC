@@ -10,8 +10,8 @@
 				<div id="message-board-title" class="cornerTitle"><?php _e('<!--:zh-->联系我们<!--:--><!--:en-->Contract Us<!--:-->'); ?></div>
 				
 				<?php if ( get_post_custom_values('comments') ){ ?>
-					<div id="message-board-border">
-							<div id="message-board-content">
+				<div id="message-board-border">
+						<div id="message-board-content">
 				<?php } ?>
 
 				<div id="page-content" class="entry-content">
@@ -22,7 +22,7 @@
 <?php edit_post_link( __( 'Edit', 'sandbox' ), '<span class="edit-link">', '</span>' ) ?>
 
 				</div>
-			</div><!-- .post -->
+			<!--/div><!-- .post -->
 
 <?php if ( get_post_custom_values('comments') ) comments_template() // Add a key+value of "comments" to enable comments on this page ?>
 			
@@ -30,7 +30,9 @@
 					</div><!-- #companies-board-content-->
 				</div><!--#companies-board-border -->
 			<?php } ?>
+
 		</div><!-- #content -->
+
 	</div><!-- #container -->
 	
 	<!--竖直分割线-->
