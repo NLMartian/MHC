@@ -39,11 +39,6 @@
 						</div>
 					</div>
 			</div>
-		
-			<div id="nav-above" class="navigation">
-				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
-				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
-			</div>
 			
 			<?php
 				global $post;
@@ -65,11 +60,6 @@
 				</div>
 			</div><!-- .post -->
 			<?php endforeach; ?>
-
-			<div id="nav-below" class="navigation">
-				<div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div>
-				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
-			</div>
 
 		</div><!-- #content -->
 	</div><!-- #container -->
