@@ -22,7 +22,7 @@
 		</div>
 		<div id="contact-way">
 			<span><?php _e("<!--:zh-->在线联系我们<!--:--><!--:en-->Contact us online<!--:-->"); ?></span>
-			<a href="skype:nl_martia?chat">
+			<a href="skype:myhealthcover?chat">
 				<img src="<?php bloginfo('template_directory');?>/images/contact-skype.png" alt="Skype" title="Skype" style="padding-left: 15px;" />
 			</a>
 
@@ -33,18 +33,18 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="pages">
-				<h3 class="cornerTitle"><?php _e(get_cat_name(5), 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(3), 'sandbox' ) ?></h3>
 				<ul class="cornerUl" style="padding-bottom: 0;">
 					<?php 
-						global $post;
-						$args = array('numberposts' => 3, 'category' => 5, 'order' => 'DESC', 'orderby' => 'post_date');
-						$myposts = get_posts($args);
+						global $category;
+						$args = array('number' => 4, 'parent' => 3, 'order' => 'DESC', 'orderby' => 'name');
+						$categorys = get_categories($args);
 
-						foreach($myposts as $post) :
-						setup_postdata($post);
+						foreach($categorys as $category) {
+							$li = '<li><a href="' . get_category_link($category->term_id) . '" title="' . $category->name . '" class="title">'. $category->name .'</a></li>';
+							echo $li;
+						}
 					?>
-					<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="title"><?php the_title(); ?></a></li>
-					<?php endforeach; ?>
 					
 					<a href="<?php echo get_category_link(5); ?>" title="<?php _e('<!--:zh-->浏览健康信息下的所有文章<!--:--><!--:en-->View all posts under Health information<!--:-->'); ?>" class="more" style="line-height: 48px;">
 					<?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
