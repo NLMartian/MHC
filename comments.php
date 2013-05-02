@@ -105,7 +105,7 @@ foreach ( $comments as $comment )
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="call"><?php _e("<!--:zh-->称呼<!--:--><!--:en-->MR/MS<!--:-->") ?></label>
+								<label class="control-label" for="call"><?php _e("<!--:zh-->称呼<!--:--><!--:en-->Mr/Ms<!--:-->") ?></label>
 								<div class="controls">
 									<select class="form-input" name="call" id="call">
 										<option><?php _e("<!--:zh-->先生<!--:--><!--:en-->MR<!--:-->") ?></option>
@@ -142,8 +142,7 @@ foreach ( $comments as $comment )
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="where"><?php _e("<!--:zh-->国籍<!--:--><!--:en-->N
-								ationality<!--:-->") ?></label>
+								<label class="control-label" for="where"><?php _e("<!--:zh-->国籍<!--:--><!--:en-->Nationality<!--:-->") ?></label>
 								<div class="controls">
 									<select class="form-input" name="where" id="where">
 									<?php 
