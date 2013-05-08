@@ -33,11 +33,11 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="pages">
-				<h3 class="cornerTitle"><?php _e(get_cat_name(3), 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(42), 'sandbox' ) ?></h3>
 				<ul class="cornerUl" style="padding-bottom: 0;">
 					<?php 
 						global $category;
-						$args = array('number' => 4, 'parent' => 3, 'order' => 'DESC', 'orderby' => 'name');
+						$args = array('number' => 4, 'parent' => 42, 'order' => 'DESC', 'orderby' => 'name', 'include' => '51,52,53,54');
 						$categorys = get_categories($args);
 
 						foreach($categorys as $category) {
@@ -46,29 +46,25 @@
 						}
 					?>
 					
-					<a href="<?php echo get_category_link(5); ?>" title="<?php _e('<!--:zh-->浏览健康信息下的所有文章<!--:--><!--:en-->View all posts under Health information<!--:-->'); ?>" class="more" style="line-height: 48px;">
+					<a href="<?php echo get_category_link(42); ?>" title="<?php _e('<!--:zh-->浏览计划信息下的所有文章<!--:--><!--:en-->View all posts under Plan information<!--:-->'); ?>" class="more" style="line-height: 48px;">
 					<?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 
 			<li id="categories">
-				<h3 class="cornerTitle"><?php _e(get_cat_name(6), 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(45), 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
-						global $news;
-						$args = array('category' => 6, 'numberposts' => 1);
-						$mynews = get_posts($args);
+						global $res;
+						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'ASC');
+						$cats = get_categories($args);
 
-						setup_postdata($mynews[0]);
-						global $more;
-						$more = 0;
-						the_content('');
+						foreach($cats as $res) {
+							$li = '<li><a href="' . get_category_link($res->term_id) . '" title="<?php _e('<!--:zh-->浏览<!--:--><!--:en-->View<!--:-->') ?>' . $res->name . '" class="title">'. $res->name .'</a></li>';
+							echo $li;
+						}
 					?>
-					
-					<a href="<?php echo get_category_link(6);?>" title="<?php _e('<!--:zh-->浏览保险新闻下的所有文章<!--:--><!--:en-->View all posts under Insurance news<!--:-->'); ?>" class="more">
-					<?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
-
 				</ul>
 			</li>
 		</ul>
