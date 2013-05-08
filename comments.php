@@ -100,7 +100,7 @@ foreach ( $comments as $comment )
 
 							<p id="comment-notes"><?php if ($req) _e('<!--:zh-->带*的为必填选项<!--:--><!--:en-->Required fields are marked <span class="required">*</span><!--:en-->'); ?></p>
 							<div class="control-group">
-								<label class="control-label" for="author"><?php _e("<!--:zh-->姓名<!--:--><!--:en-->Name<!--:-->") ?></label> <?php if ($req) _e( '<!--span class="required">*</span-->', 'sandbox' ) ?>
+								<label class="control-label" for="author"><span class="required">* </span><?php _e("<!--:zh-->姓名<!--:--><!--:en-->Name<!--:-->") ?></label> <?php if ($req) _e( '<!--span class="required">*</span-->', 'sandbox' ) ?>
 								<div class="controls"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="" size="30" maxlength="50" tabindex="3" /></div>
 							</div>
 
@@ -123,7 +123,7 @@ foreach ( $comments as $comment )
 							</div>					
 
 							<div class="control-group">
-								<label class="control-label" for="url"><span class="required">*</span><?php _e("<!--:zh-->手机<!--:--><!--:en-->Mobile<!--:-->") ?></label>
+								<label class="control-label" for="url"><span class="required">* </span><?php _e("<!--:zh-->手机<!--:--><!--:en-->Mobile<!--:-->") ?></label>
 								<div class="controls"><input id="url" name="url" class="text" type="text" value="" size="30" maxlength="50" tabindex="5" /></div>
 							</div>
 
@@ -140,7 +140,7 @@ foreach ( $comments as $comment )
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="email"><?php _e("<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->") ?>  *</label> <?php if ($req) _e( '<!--span class="required">*</span-->', 'sandbox' ) ?>
+								<label class="control-label" for="email"><span class="required">* </span><?php _e("<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->") ?></label> <?php if ($req) _e( '<!--span class="required">*</span-->', 'sandbox' ) ?>
 								<div class="controls"><input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="" size="30" maxlength="50" tabindex="4" /></div>
 							</div>
 

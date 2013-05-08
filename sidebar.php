@@ -57,11 +57,11 @@
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
 						global $res;
-						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'ASC');
+						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'DESC');
 						$cats = get_categories($args);
 
 						foreach($cats as $res) {
-							$li = '<li><a href="' . get_category_link($res->term_id) . '" title="<?php _e('<!--:zh-->浏览<!--:--><!--:en-->View<!--:-->') ?>' . $res->name . '" class="title">'. $res->name .'</a></li>';
+							$li = '<li><a href="' . get_category_link($res->term_id) . '" title="' . $res->name . '" class="title">'. $res->name .'</a></li>';
 							echo $li;
 						}
 					?>
