@@ -27,6 +27,8 @@
 		<div id="contact-info">
 			<span id="contact-addr"><?php _e("<!--:zh-->上海<!--:--><!--:en-->Shanghai<!--:-->"); ?><span><br/>
 			<span id="contact-num">+86 15901980381</span><br/>
+			<span>English</span>
+			<span>+86 13321816681</span>
 			<span id="contact-email"><a href="/" title="<?php _e('<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->'); ?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
@@ -41,24 +43,19 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="categories">
-				<h3 class="cornerTitle"><?php _e(get_cat_name(6), 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(45), 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
-						global $news;
-						$args = array('category' => 6, 'numberposts' => 1, 'order' => 'DESC', 'orderby' => 'post_date');
-						$mynews = get_posts($args);
+						global $res;
+						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'DESC');
+						$cats = get_categories($args);
 
-						foreach($mynews as $news) :
-						setup_postdata($news);
+						foreach($cats as $res) {
+							$li = '<li><a href="' . get_category_link($res->term_id) . '" title="' . $res->name . '" class="title">'. $res->name .'</a></li>';
+							echo $li;
+						}
 					?>
-					<p><?php
-						global $more;
-						$more = 0;
-						the_content(''); ?>
-					</p>
-					<?php endforeach; ?>
-					<a href="<?php echo get_category_link(6);?>" title="View all posts under Insurance news" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>
