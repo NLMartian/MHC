@@ -65,7 +65,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
 						global $res;
-						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'DESC');
+						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'ASC');
 						$cats = get_categories($args);
 
 						foreach($cats as $res) {
