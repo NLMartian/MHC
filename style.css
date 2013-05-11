@@ -443,18 +443,18 @@ div#contact-img
 div#contact-info
 {
 	float: center;
-	padding: 30px 0;
+	padding: 10px 0 20px 0;
 }
 
-div#contact-info span#contact-addr
+div#contact-info span.contact-addr
 {
 	color: #673D2D;
 }
 
-div#contact-info span#contact-num
+div#contact-info span.contact-num
 {
 	color: #484848;
-	line-height: 30px;
+	line-height: 20px;
 }
 
 div#contact-info span#contact-email
