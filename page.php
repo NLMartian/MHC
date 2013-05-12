@@ -31,6 +31,8 @@
 				</div><!--#companies-board-border -->
 			<?php } ?>
 
+				</div><!-- #companies-board-content-->
+			<!--#companies-board-border -->
 		</div><!-- #content -->
 
 	</div><!-- #container -->
