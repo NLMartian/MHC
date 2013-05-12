@@ -121,8 +121,8 @@
 						global $q_config;
 						foreach(qtrans_getSortedLanguages() as $language) {
 					?>
-		           	<li class="currency_type"><?php echo $q_config['language_name'][$language]; ?></li>
-		           	<input type="hidden"  class="language_url" value="<?php echo htmlspecialchars_decode(qtrans_convertURL($url, $language), ENT_NOQUOTES); ?>"/>
+		           	<li class="currency_type" id="<?php echo $language ?>"><?php echo $q_config['language_name'][$language]; ?></li>
+		           	<input type="hidden" id="url-<?php echo $language ?>" class="language_url" value="<?php echo htmlspecialchars_decode(qtrans_convertURL($url, $language), ENT_NOQUOTES); ?>"/>
 		           	<?php 
 						}
 					?>

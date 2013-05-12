@@ -23,7 +23,8 @@ jQuery(document).ready(function($) {
 	var $dss=jQuery(".currency_type");
 	$dss.click(function(){  
 			var $txt=jQuery(this).text();//展开菜单中的列表文本值
-			var $url=jQuery(this).next();
+			var $id = jQuery(this).attr("id");
+			var $url=jQuery("#url-" + $id);
 			var $t1=jQuery("#open_select");//模拟文本框，接受选择的值
 			$t1.text($txt); 
 			changeLanguage($url.val());
@@ -54,6 +55,6 @@ jQuery(document).ready(function($) {
 });
 
 function changeLanguage(obj) {
-	document.location.href = obj;
-	console.log(obj);
+	window.location.href = obj;
+	console.log("next" + obj);
 }
