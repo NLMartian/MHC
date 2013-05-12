@@ -41,7 +41,7 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="pages">
-				<h3 class="cornerTitle"><?php _e(get_cat_name(42), 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(2), 'sandbox' ) ?></h3>
 				<ul class="cornerUl" style="padding-bottom: 0;">
 					<?php 
 						global $category;
@@ -65,7 +65,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
 						global $res;
-						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'ASC');
+						$args = array('parent' => 45, 'orderby' => 'id', 'order' => 'DESC');
 						$cats = get_categories($args);
 
 						foreach($cats as $res) {

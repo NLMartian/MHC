@@ -25,16 +25,10 @@
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>
 		<div id="contact-info">
-			<?php 
-				$user_info = get_userdata(1);
-				echo '<span class="contact-addr">中文</span><br>';
-				$span1 = '<span class="contact-num">'. $user_info -> aim .'</span><br>';
-				echo $span1;
-				echo '<span class="contact-addr">English</span><br>';
-				$span2 = '<span class="contact-num">'. $user_info -> yim .'</span>';
-				echo $span2;
-			?>
-			<br>
+			<span id="contact-addr"><?php _e("<!--:zh-->上海<!--:--><!--:en-->Shanghai<!--:-->"); ?><span><br/>
+			<span id="contact-num">+86 15901980381</span><br/>
+			<span>English</span>
+			<span>+86 13321816681</span>
 			<span id="contact-email"><a href="/" title="<?php _e('<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->'); ?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
@@ -54,7 +48,7 @@
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
 						global $res;
-						$args = array('parent' => 45, 'orderby' => 'name', 'order' => 'DESC');
+						$args = array('parent' => 45, 'orderby' => 'id', 'order' => 'DESC');
 						$cats = get_categories($args);
 
 						foreach($cats as $res) {
