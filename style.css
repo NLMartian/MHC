@@ -211,10 +211,12 @@ div#respond input#submit {
 	margin-bottom: 5px;
 }
 
- /*???????? START*/
+ /*post START*/
  div.post
  {
 	border-bottom: 1.5px solid #F0F0F0;
+	color: #888888;
+	font-size: 16px;
  }
 
  div.post a
@@ -233,18 +235,16 @@ div.post a.more-link
 	font-size: 14px;
 }
 
-div.post
-{
-	color: #888888;
-	font-size: 16px;
-}
-
 div.p1 h2
 {
 	margin-top: 0;
 }
 
-/*????????END*/
+div.post img
+{
+	margin: 0;
+}
+/*post END*/
 
 div#menu {
 background:#EEE;
@@ -427,11 +427,6 @@ div#primary h3
 div#primary h3 a:link
 {
 	text-decoration:none;
-}
-
-div#primary img
-{
-	
 }
 
 div#contact-img
