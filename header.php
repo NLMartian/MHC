@@ -8,15 +8,7 @@
 	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
-	
-	<!-- 导入jquery.js -->
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
-	<!-- 导入jquery.corner.js -->
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.corner.js"></script>
-	<!-- 弹出菜单的样式文件 -->
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/j-menu.js"></script>
-	<!-- 导入mhc.js -->
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/mhc.js"></script>
+
 	<!-- load icon -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico" />
 	<?php wp_head() // For plugins ?>
