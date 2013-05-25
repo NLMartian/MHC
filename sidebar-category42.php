@@ -2,16 +2,14 @@
 		<ul class="xoxo">
 			<li id="companies">
 				<h3 class="cornerTitle">
-					<?php _e(get_cat_name(get_current_cat_id()), 'sandbox')?>
-					<?php _e(get_current_cat_id(), 'sandbox')?>
+					<?php _e(get_cat_name(42), 'sandbox')?>
 				</h3>
 				<ul class="cornerUl categoryUl">
-					<?php
+					<?php 
 						$args = array(
 							'orderby' => 'id',
 							'order' => 'ASC',
-							'child_of' => 2,
-							//'child_of' => get_current_cat_id(),
+							'child_of' => 42,
 							'hide_empty' => 1,
 							'title_li' => ''
 						);
@@ -22,7 +20,7 @@
 	</div>
 
 	<div id="primary" class="sidebar" style="margin-top: 24px;">
-		<h3 style="margin-top: 0;"><?php _e('Contact us', 'sandbox')?></h3>
+		<h3 style="margin-top: 0;"><?php _e('<!--:zh-->联系我们<!--:--><!--:en-->Contact us<!--:-->');?></h3>
 		<div id="contact-img">
 			<img src="<?php bloginfo('template_directory'); ?>/images/contact-us-per.png" alt="Contact us" />
 		</div>
@@ -43,7 +41,7 @@
 				echo $span2;
 			?>
 			<br>
-			<span id="contact-email"><a href="/" title="<?php _e('Email', 'sandbox')?>"><?php bloginfo('admin_email')?></a></span> <br/>
+			<span id="contact-email"><a href="/" title="<?php _e('<!--:zh-->邮箱<!--:--><!--:en-->Email<!--:-->'); ?>"><?php bloginfo('admin_email')?></a></span> <br/>
 		</div>
 		<div id="contact-way">
 			<span><?php _e("<!--:zh-->在线联系我们<!--:--><!--:en-->Contact us online<!--:-->"); ?></span>
@@ -57,20 +55,19 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="categories">
-				<h3 class="cornerTitle"><?php _e( 'Insurance news', 'sandbox' ) ?></h3>
+				<h3 class="cornerTitle"><?php _e(get_cat_name(45), 'sandbox' ) ?></h3>
 				<ul class="cornerUl">
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
-						global $news;
-						$args = array('category' => 6, 'numberposts' => 1, 'order' => 'DESC', 'orderby' => 'post_date');
-						$mynews = get_posts($args);
+						global $res;
+						$args = array('parent' => 45, 'orderby' => 'id', 'order' => 'ASC');
+						$cats = get_categories($args);
 
-						foreach($mynews as $news) :
-						setup_postdata($news);
+						foreach($cats as $res) {
+							$li = '<li><a href="' . get_category_link($res->term_id) . '" title="' . $res->name . '" class="title">'. $res->name .'</a></li>';
+							echo $li;
+						}
 					?>
-					<p><?php the_content(); ?></p>
-					<?php endforeach; ?>
-					<a href="<?php echo get_category_link(6);?>" title="View all posts under Insurance news" class="more"><?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 
 				</ul>
 			</li>
