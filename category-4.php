@@ -14,9 +14,14 @@
 	$cag = get_categories($args);
 	
 	$fisrt_child_id = $cag[0]->cat_ID;
+
+	$query_post_args = array(
+		'order' => 'ASC',
+		'cat' => $fisrt_child_id
+		);
 ?>
 
-<?php query_posts('cat=' . $fisrt_child_id); ?>
+<?php query_posts($query_post_args); ?>
 <?php while ( have_posts() ) : the_post() ?>
 
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
