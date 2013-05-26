@@ -41,9 +41,15 @@
 		}else if($parentID == 3)
 		{
 			get_sidebar('category3');
-		}else
+		}else if($parentID == 4)
 		{
 			get_sidebar('category4');
+		}else if($parentID == 45)
+		{
+			get_sidebar('category45');
+		}else
+		{
+			get_sidebar('category42');
 		}
 		//get_sidebar($cat);
 	?>
