@@ -725,7 +725,7 @@ div#title{
 }
 
 .menubar ul.menus li.current-cat-parent a {
-	background:url(images/menu-hover-bg.png) no-repeat bottom; 
+	/*background:url(images/menu-hover-bg.png) no-repeat bottom; */
 }
 
 .menubar ul.menus li.current-cat-parent ul.children li a {

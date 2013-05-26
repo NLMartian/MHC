@@ -11,6 +11,7 @@
 
 	<!-- load icon -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.ico" />
+	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head() // For plugins ?>
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
