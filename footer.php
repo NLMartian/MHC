@@ -6,7 +6,7 @@
 			<span id="site-map"><a href="http://www.myhealthcover.com/sitemap.html" title="Site Map" rel="designer">Site Map</a></span>
 			<span class="meta-sep">|</span>
 			<span id="privacy"><a href="<?php echo get_permalink(395); ?>" rel="">Privacy</a></span>
-			<span>Copyright©20013-2020My HealthCover, All rights reserved.</span>
+			<span>Copyright©2013-2020 MyHealthCover, All rights reserved.</span>
 		</div>
 	</div><!-- #footer -->
 
