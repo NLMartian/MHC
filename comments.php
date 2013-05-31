@@ -597,7 +597,7 @@ foreach ( $comments as $comment )
 							</div>
 
 							<div class="control-group">
-								<label class="control-label" for="live"><?php _e("<!--:zh-->常住地<!--:--><!--:en-->Place of residence<!--:-->") ?></label>
+								<label class="control-label" for="live"><?php _e("<!--:zh-->常住地<!--:--><!--:en-->Country of residence<!--:-->") ?></label>
 								<div class="controls">
 									<select class="form-input" name="live" id="live">
 									<?php 

@@ -183,14 +183,14 @@ div#message-board-title{
 div#message-board-border{
 	background:#e37263;
 	width:778px;
-	height:790px;
+	height:810px;
 	padding:1.5px 2px 1.5px 2px;
 	margin-bottom: -660px;
 }
 div#message-board-content{
 	background:#f0f0f0;
 	width:778px;
-	height:789px;
+	height:809px;
 	overflow:hidden;
 	width:778px \9;
 	margin-bottom: -659px;
@@ -208,10 +208,20 @@ div#respond {
 }
 
 div#respond input#submit {
-	color: #B23C1B;
-	line-height: 33px;
-	padding: 10px;
-	margin-bottom: 5px;
+	background-color: hsl(6, 65%, 63%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fefbfa", endColorstr="#dd6f63");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fefbfa), to(#dd6f63));
+  background-image: -moz-linear-gradient(top, #fefbfa, #dd6f63);
+  background-image: -ms-linear-gradient(top, #fefbfa, #dd6f63);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefbfa), color-stop(100%, #dd6f63));
+  background-image: -webkit-linear-gradient(top, #fefbfa, #dd6f63);
+  background-image: -o-linear-gradient(top, #fefbfa, #dd6f63);
+  background-image: linear-gradient(#fefbfa, #dd6f63);
+  border-color: #dd6f63 #dd6f63 hsl(6, 65%, 54%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.59);
+  -webkit-font-smoothing: antialiased;
 }
 
  /*post START*/
