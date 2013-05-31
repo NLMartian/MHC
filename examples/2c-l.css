@@ -12,6 +12,11 @@ body
 	font-family: 12px/1.5 arial, "ArialNarrow", "Helvetica Neue", Helvetica, sans-serif;
 }
 
+h2
+{
+	font-size: 26.5px;
+}
+
 div#wrapper
 {
 	width: auto;
