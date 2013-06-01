@@ -55,20 +55,22 @@
 	<div id="secondary" class="sidebar">
 		<ul class="xoxo">
 			<li id="categories">
-				<h3 class="cornerTitle"><?php _e(get_cat_name(45), 'sandbox' ) ?></h3>
-				<ul class="cornerUl">
+				<h3 class="cornerTitle"><?php _e(get_cat_name(42), 'sandbox' ) ?></h3>
+				<ul class="cornerUl" style="padding-bottom: 0;">
 					<img src="<?php bloginfo('template_directory'); ?>/images/insurance-news.jpg" alt="Insurance news" />
 					<?php 
-						global $res;
-						$args = array('parent' => 45, 'orderby' => 'id', 'order' => 'ASC');
-						$cats = get_categories($args);
+						global $category;
+						$args = array('number' => 4, 'parent' => 42, 'order' => 'DESC', 'orderby' => 'name', 'include' => '51,52,53,54');
+						$categorys = get_categories($args);
 
-						foreach($cats as $res) {
-							$li = '<li><a href="' . get_category_link($res->term_id) . '" title="' . $res->name . '" class="title">'. $res->name .'</a></li>';
+						foreach($categorys as $category) {
+							$li = '<li><a href="' . get_category_link($category->term_id) . '" title="' . $category->name . '" class="title">'. $category->name .'</a></li>';
 							echo $li;
 						}
 					?>
-
+					
+					<a href="<?php echo get_category_link(42); ?>" title="<?php _e('<!--:zh-->浏览计划信息下的所有文章<!--:--><!--:en-->View all posts under Plan information<!--:-->'); ?>" class="more" style="line-height: 48px;">
+					<?php _e("<!--:zh-->更多>><!--:--><!--:en-->More>><!--:-->"); ?></a>
 				</ul>
 			</li>
 		</ul>

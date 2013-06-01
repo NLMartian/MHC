@@ -253,6 +253,16 @@ div.p1 h2
 	margin-top: 0;
 }
 
+div.p2 h2
+{
+	padding-top: 10px;
+}
+
+div#post-381 h2
+{
+	margin-top: 10px;
+}
+
 div.post img
 {
 	margin: 0;
