@@ -3,7 +3,11 @@
 <head profile="http://gmpg.org/xfn/11">
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
-
+	<meta name="baidu-site-verification" content="K5k2YHPDKI8oSrqy" />
+	<meta name="description" content="This website is about health cover, insurance and medical" />
+	<meta name="keywords" content="www.myhealthcover.com, health insurance, medical insurance, family plan, single plan, maternity, 
+		dental, inpatient, outpatient, CIGNA&CMC, MSH China" />
+	<meta name="MyHealthCover" content="vip@myhealthcover.com" />
 	<!-- 导入bootstrap -->
 	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
