@@ -5,8 +5,7 @@
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<meta name="baidu-site-verification" content="K5k2YHPDKI8oSrqy" />
 	<meta name="description" content="This website is about health cover, insurance and medical" />
-	<meta name="keywords" content="www.myhealthcover.com, health insurance, medical insurance, family plan, single plan, maternity, 
-		dental, inpatient, outpatient, CIGNA&CMC, MSH China" />
+	<meta name="keywords" content="www.myhealthcover.com, health insurance medical insurance, international health insurance, international medical insurance, expatriate health insurance, expatriate medical insurance, expat health insurance, expat insurance, china insurance, health insurance overseas, health insurance china, my health insurance, health cover, china family insurance, 医疗保险, 高端医疗保险, 国际医疗保险" />
 	<meta name="MyHealthCover" content="vip@myhealthcover.com" />
 	<!-- 导入bootstrap -->
 	<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
