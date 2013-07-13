@@ -652,8 +652,12 @@ div#footer-info{
 	text-decoration:none;
 }
 
-input#author,input#email,input#url,div.navigation,input#age div {
-width:190px;
+input#author,input#email,input#url,div.navigation {
+	width:183px;
+}
+
+input#age {
+	width:177px;
 }
 
 select#where,select#when,select#live,select#call {
